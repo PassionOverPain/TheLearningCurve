@@ -32,7 +32,7 @@ nav
 {
     margin-right: 10px;
     text-decoration: none;
-    color: #000;;
+    color: purple;;
 }
 nav img
 {
@@ -52,12 +52,14 @@ nav img
 }
 #book
 {
+    position: relative;
+    left: 3vw;
     background-color: transparent;
-    padding: 15px;
-    margin-left: 55px;
+    padding: 12px;
     border: solid #000 1px;
 }
 #book:hover 
 {
-    background-color:red;
+    background-color:rgb(3, 2, 92);
+    color:white;
 }
