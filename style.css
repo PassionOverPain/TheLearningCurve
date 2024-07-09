@@ -29,8 +29,14 @@ nav
 {
     font-size: 2.3rem;
 }
+.navigation a
+{
+ text-decoration: none;
+ color: #000;;
+}
 nav img
 {
+    float: left;
     width:5vw;
     border-radius: 15px;
 }
