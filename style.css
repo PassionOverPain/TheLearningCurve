@@ -17,18 +17,28 @@ body
     display: flex;
     justify-content: center;
 }
+#brandName
+{
+    line-height: 55px;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
 nav
 {
-    width: 100vw; 
-    height: 11vh;
+    width: 100%; 
     background-color: rgb(3, 2, 92);
 }
-.navigation
+
+nav ul
 {
     position: absolute;
     top:2vh;
     left:65vw;
     font-size: 1.7rem;
+}
+nav ul li 
+{
+    display: inline-block;
 }
 .navigation a
 {
