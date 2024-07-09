@@ -3,6 +3,8 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 header
 {
@@ -31,8 +33,7 @@ nav
 .navigation a
 {
     margin-right: 10px;
-    text-decoration: none;
-    color: purple;;
+    color: #000;
 }
 nav img
 {
@@ -57,6 +58,7 @@ nav img
     background-color: transparent;
     padding: 12px;
     border: solid #000 1px;
+    transition: background-color 0.5s;
 }
 #book:hover 
 {
