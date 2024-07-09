@@ -19,9 +19,10 @@ body
 }
 #brandName
 {
+    font-family: 'Times New Roman', Times, serif;
     line-height: 55px;
     font-size: 2.1rem;
-    font-weight: bold;
+    font-weight: light;
 }
 nav
 {
@@ -38,7 +39,12 @@ nav ul
 }
 nav ul li 
 {
-    display: inline-block;
+    display: inline;
+    
+}
+nav ul li:hover
+{
+    border-bottom: purple solid 2px;
 }
 .navigation a
 {
