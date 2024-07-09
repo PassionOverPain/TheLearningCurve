@@ -9,8 +9,6 @@ header
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to right,purple, blue);
-    
-   
 }
 body
 {
@@ -41,4 +39,16 @@ nav img
     float: left;
     width:4vw;
     border-radius: 15px;
+}
+#slogan
+{
+    margin-left: 40px;
+    height: 50vh;
+    display: flex;
+    font-size: 2.4rem;
+    align-items: center;
+}
+#book
+{
+    
 }
