@@ -268,10 +268,12 @@ section
 }
 .aboutUs
 {
-    background-color: red;
+    background-color: rgb(3, 2, 92);
     border-radius: 20px;
-    font-size: 1.4rem;
-    opacity: 0.4;
+}
+.aboutUs p
+{
+    opacity: 1;
 }
 #B
 {
