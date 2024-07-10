@@ -173,19 +173,23 @@ section
 footer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     height: 25vh;
     background-color: rgb(3, 2, 92);
 }
 #leftfoot
 {
-    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
     height: 25vh;
-    background-color: red;
+    background-color: purple;
 }
 #rightfoot
 {
-    width: 50px;
+    width: 25vw;
     height: 25vh;
-    background-color: black;
+    background-color: purple;
 }
