@@ -192,20 +192,20 @@ section
 #GROW
 {
     position: relative;
-    top:50vh;
+    top:20vh;
     left:25vh;
 }
 #EXPERIENCE
 {
     position: relative;
-    top:50px;
+    top:35vh;
     left:25vh;
 }
 #UNDERSTAND
 {
     position: relative;
-    top:50px;
-    left:25vh;
+    top:60vh;
+    left:0vh;
 }
 #Logo
 {
