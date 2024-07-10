@@ -10,13 +10,12 @@ header
 {
     position: relative;
     height: 100vh;
-    width: 100vw;
     background-image: linear-gradient(to right,purple, blue);
 }
 body
 {
-    width: 100vw;
-    height: fit-content;
+    min-height: fit-content;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
 }
 #brandName
@@ -27,15 +26,16 @@ body
 nav
 {
     position: fixed;
-    width: 100vw; 
+    display: flex;
+    height: fit-content;
     background-color: rgb(3, 2, 92);
 }
 
 nav ul
 {
-    position: absolute;
-    top:2vh;
-    left:50vw;
+    display: block;
+    justify-content: end;
+    position: relative;
     line-height: 35px;
     font-size: 1.2rem;
 }
@@ -148,9 +148,12 @@ nav img
 }
 main
 {
-  width: 100vw;
   background-color: red;
-  height: 1000vh;
+  height: fit-content;
+}
+section
+{
+    height: 100vh;
 }
 footer
 {
