@@ -267,7 +267,7 @@ section
 }
 #B
 {
-   background-color: blue; 
+    background-image: linear-gradient(to right,purple, blue);
 }
 #C
 {
