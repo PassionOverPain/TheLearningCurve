@@ -189,6 +189,10 @@ footer
 }
 #rightfoot
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 25vw;
     height: 25vh;
     background-color: purple;
