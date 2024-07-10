@@ -171,18 +171,19 @@ section
     justify-content: center;
     align-items:start;
     text-align: center;
-    background-color: purple; 
+    background-image: linear-gradient(to right,purple, blue);
 }
-#words
+#words1
 {
     position: absolute;
-    animation: wordsright 3s infinite;
+    animation: wordsright 5s infinite;
     transition: display 0.5s;
 }
 #words2
 {
     position: absolute;
-    animation: wordsleft 3s infinite;
+    left:70vw;
+    animation: wordsleft 5s infinite;
     transition: display 0.5s;
 }
  @keyframes wordsright 
@@ -238,28 +239,29 @@ section
 {
     position: relative;
     top:20vh;
-    left:25vh;
+    left:0vh;
 }
 #PHYSICS
 {
     position: relative;
     top:35vh;
-    left:25vh;
+    left:-25vh;
 }
 #ACCOUNTING
 {
     position: relative;
     top:50vh;
-    left:1vh;
+    left:-30vh;
 }
 #BIOLOGY
 {
     position: relative;
     top:60vh;
-    left:-25vh;
+    left:-35vh;
 }
 #Logo
 {
+    width: 30.2rem;
      border-radius:100%;
      z-index: 1000;
 }
