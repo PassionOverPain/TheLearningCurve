@@ -300,3 +300,9 @@ footer
     height: 25vh;
     color:white;
 }
+#rights
+{
+    position:absolute;
+    top:320vh;
+    left:35vw;
+}
