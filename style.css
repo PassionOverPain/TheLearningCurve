@@ -288,8 +288,15 @@ section
 }
 .card
 {
+    background-color: bisque;
+    margin-right: 15px;
+    padding: 25px;
     height: fit-content;
     width: 40vw;
+}
+#Physics
+{
+    line-height: 15vh;
 }
 #Pricing
 {
