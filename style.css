@@ -165,6 +165,7 @@ section
 }
 #About
 {
+    height: fit-content;
     position: relative;
     bottom: -50px;
     display: grid;
@@ -264,6 +265,13 @@ section
     width: 30.2rem;
      border-radius:100%;
      z-index: 1000;
+}
+.aboutUs
+{
+    background-color: red;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    opacity: 0.4;
 }
 #B
 {
