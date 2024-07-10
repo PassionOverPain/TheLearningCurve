@@ -164,7 +164,7 @@ section
 }
 #B
 {
-   background-color: blue; 
+   background-color: purple; 
 }
 #C
 {
@@ -172,6 +172,8 @@ section
 }
 footer
 {
+    display: grid;
+    
     height: 25vh;
-    background-color: purple;
+    background-color: rgb(3, 2, 92);
 }
