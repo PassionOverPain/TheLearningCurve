@@ -172,8 +172,20 @@ section
 }
 footer
 {
-    display: grid;
-    
+    display: flex;
+    justify-content: space-between;
     height: 25vh;
     background-color: rgb(3, 2, 92);
+}
+#leftfoot
+{
+    width: 50px;
+    height: 25vh;
+    background-color: red;
+}
+#rightfoot
+{
+    width: 50px;
+    height: 25vh;
+    background-color: black;
 }
