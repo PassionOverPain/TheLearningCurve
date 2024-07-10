@@ -24,7 +24,7 @@ body
 #brandName
 {
     line-height: 55px;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
 }
 nav
 {
@@ -51,7 +51,7 @@ nav ul li
     margin:10px;
     
 }
-nav ul li:hover
+nav ul li a:hover
 {
     border-bottom: purple solid 2px;
 }
@@ -59,7 +59,7 @@ nav ul li:hover
 {
     text-decoration: none;
     line-height: 50px;
-    margin-right: 10px;
+    margin-right: 5px;
     color: #000;
 }
 .navigation a ion-icon
@@ -105,6 +105,7 @@ nav img
     animation-delay: 0;
     animation-iteration-count: 1;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 @keyframes slideleft /*Does not work ? *?*/
 {
