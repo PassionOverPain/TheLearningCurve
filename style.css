@@ -176,18 +176,33 @@ section
 #words
 {
     position: absolute;
+    animation: wordsright 3s infinite;
+    transition: display 0.5s;
 }
+#words2
+{
+    position: absolute;
+    animation: wordsleft 3s infinite;
+    transition: display 0.5s;
+}
+ @keyframes wordsright 
+{   
+    0%{opacity: 1;;}
+    50%{transform: translateX(100%);opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes wordsleft
+{   
+    0%{opacity: 1;;}
+    50%{transform: translateX(-100%);opacity: 0;}
+    100%{opacity: 1;}
+}
+
 #LEARN
 {
     position: relative;
     top:50px;
     left:25vh;
-    animation-name: learn;
-
-}
-@keyframes learn 
-{
-
 }
 #GROW
 {
@@ -201,15 +216,52 @@ section
     top:35vh;
     left:25vh;
 }
+#REFLECT
+{
+    position: relative;
+    top:50vh;
+    left:1vh;
+}
 #UNDERSTAND
 {
     position: relative;
     top:60vh;
-    left:0vh;
+    left:-25vh;
+}
+#MATHS
+{
+    position: relative;
+    top:50px;
+    left:25vh;
+}
+#ENGLISH
+{
+    position: relative;
+    top:20vh;
+    left:25vh;
+}
+#PHYSICS
+{
+    position: relative;
+    top:35vh;
+    left:25vh;
+}
+#ACCOUNTING
+{
+    position: relative;
+    top:50vh;
+    left:1vh;
+}
+#BIOLOGY
+{
+    position: relative;
+    top:60vh;
+    left:-25vh;
 }
 #Logo
 {
      border-radius:100%;
+     z-index: 1000;
 }
 #B
 {
