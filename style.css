@@ -83,6 +83,7 @@ nav img
 }
 #book
 {
+    display: inline-block;
     position: relative;
     left: 3vw;
     background-color: transparent;
@@ -96,10 +97,14 @@ nav img
 }
 @keyframes slideleft /*Does not work ? *?*/
 {
-    from{transform: translateX(50%);}
+    from{transform: translateX(-300px);}
 }
 #book:hover 
 {
     background-color:rgb(3, 2, 92);
     color:white;
+}
+#socialIcons
+{
+    
 }
