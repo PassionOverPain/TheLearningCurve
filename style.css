@@ -288,7 +288,8 @@ section
 }
 .card
 {
-    background-color: bisque;
+    background-color: rgba(4, 2, 92, 0.253);
+    backdrop-filter: blur(10px);
     margin-right: 15px;
     padding: 25px;
     height: fit-content;
