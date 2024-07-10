@@ -16,13 +16,12 @@ body
 {
     display: flex;
     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 #brandName
 {
-    font-family: 'Times New Roman', Times, serif;
     line-height: 55px;
     font-size: 2.1rem;
-    font-weight: light;
 }
 nav
 {
@@ -35,11 +34,13 @@ nav ul
     position: absolute;
     top:2vh;
     left:65vw;
-    font-size: 1.7rem;
+    line-height: 35px;
+    font-size: 1.2rem;
 }
 nav ul li 
 {
     display: inline;
+    margin:10px;
     
 }
 nav ul li:hover
@@ -50,6 +51,11 @@ nav ul li:hover
 {
     margin-right: 10px;
     color: #000;
+}
+.navigation a ion-icon
+{
+    position: relative;
+    top:2px;
 }
 nav img
 {
@@ -66,6 +72,14 @@ nav img
     display: flex;
     font-size: 2.4rem;
     align-items: center;
+    animation-name: slideup;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+@keyframes slideup 
+{
+    from{transform: translateY(50%);}
 }
 #book
 {
@@ -74,7 +88,15 @@ nav img
     background-color: transparent;
     padding: 12px;
     border: solid #000 1px;
+    animation-name: slideleft;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
     transition: background-color 0.5s;
+}
+@keyframes slideleft /*Does not work ? *?*/
+{
+    from{transform: translateX(50%);}
 }
 #book:hover 
 {
