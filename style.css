@@ -166,12 +166,16 @@ section
 #About
 {
     position: relative;
-    top: 20px;
+    bottom: -50px;
     display: grid;
     justify-content: center;
     align-items:start;
     text-align: center;
     background-color: purple; 
+}
+#words
+{
+    position: absolute;
 }
 #Logo
 {
