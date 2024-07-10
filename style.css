@@ -280,6 +280,13 @@ section
     margin-bottom: 10px;
     width: 95vw;
 }
+#Subjects
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 #Tutors
 {
     display: flex;
@@ -342,6 +349,6 @@ footer
 #rights
 {
     position:absolute;
-    top:100vh;
+    top:339vh;
     left:35vw;
 }
