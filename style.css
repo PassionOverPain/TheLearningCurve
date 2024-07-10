@@ -160,15 +160,20 @@ section
 }
 #About
 {
-   background-color: green; 
+    display: grid;
+    justify-content: center;
+    align-items:start;
+    text-align: center;
+
+   background-color: purple; 
 }
 #B
 {
-   background-color: purple; 
+   background-color: blue; 
 }
 #C
 {
-   background-color: yellow; 
+   background-color: purple; 
 }
 footer
 {
