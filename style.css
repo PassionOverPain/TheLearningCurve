@@ -267,11 +267,11 @@ section
 }
 #B
 {
-    background-image: linear-gradient(to right,purple, blue);
+    background-image: linear-gradient(to right,blue, purple);
 }
 #C
 {
-   background-color: purple; 
+    background-image: linear-gradient(to right,purple, blue);
 }
 footer
 {
@@ -288,7 +288,7 @@ footer
     text-align: center;
     width: 25vw;
     height: 25vh;
-    background-color: purple;
+    color:white;
 }
 #rightfoot
 {
@@ -298,5 +298,5 @@ footer
     text-align: center;
     width: 25vw;
     height: 25vh;
-    background-color: purple;
+    color:white;
 }
