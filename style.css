@@ -3,7 +3,6 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
 }
 html
@@ -58,6 +57,7 @@ nav ul li:hover
 }
 .navigation a
 {
+    text-decoration: none;
     line-height: 50px;
     margin-right: 10px;
     color: #000;
@@ -280,9 +280,18 @@ section
 }
 #Subjects
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-image: linear-gradient(to right,blue, purple);
 }
-#C
+.card
+{
+    height: fit-content;
+    width: 40vw;
+}
+#Pricing
 {
     background-image: linear-gradient(to right,purple, blue);
 }
@@ -316,6 +325,6 @@ footer
 #rights
 {
     position:absolute;
-    top:320vh;
+    top:329vh;
     left:35vw;
 }
