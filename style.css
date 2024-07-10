@@ -26,7 +26,9 @@ body
 nav
 {
     position: fixed;
+    width: 100vw;
     display: flex;
+    justify-content: space-between;
     height: fit-content;
     background-color: rgb(3, 2, 92);
 }
@@ -51,6 +53,7 @@ nav ul li:hover
 }
 .navigation a
 {
+    line-height: 50px;
     margin-right: 10px;
     color: #000;
 }
