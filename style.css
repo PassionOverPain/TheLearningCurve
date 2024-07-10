@@ -107,6 +107,21 @@ nav img
 #socialIcons
 {
     position: relative;
+    display: inline-block;
     margin:10px;
-    top:50px;
+    top:90px;
+    right: 80px;
+}
+#socialIcons a 
+{
+    display: inline-block;
+    color: black;
+    font-size: 1.8rem;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes up
+{
+    50%{transform: translateY(100%);}
 }
