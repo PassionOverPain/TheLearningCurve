@@ -117,11 +117,29 @@ nav img
     display: inline-block;
     color: black;
     font-size: 1.8rem;
+}
+#socialIcons a:hover
+{
+    animation-play-state:paused;
+}
+.up
+{
     animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.down
+{
+    animation-name: down;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 @keyframes up
 {
     50%{transform: translateY(100%);}
+}
+@keyframes down
+{
+    50%{transform: translateY(-100%);}
+   
 }
