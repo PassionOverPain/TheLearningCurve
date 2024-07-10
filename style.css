@@ -158,7 +158,20 @@ section
 {
     height: 100vh;
 }
+#About
+{
+   background-color: green; 
+}
+#B
+{
+   background-color: blue; 
+}
+#C
+{
+   background-color: yellow; 
+}
 footer
 {
-    display: inline-block;
+    height: 25vh;
+    background-color: purple;
 }
