@@ -268,14 +268,17 @@ section
 }
 .aboutUs
 {
-    background-color: rgb(3, 2, 92);
+    background-color: rgba(4, 2, 92, 0.253);
     border-radius: 20px;
+    font-size: 1.4rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(50px);
+    border-top: 1px solid rgba(255, 250, 255, 0.137);
+    border-left: 1px solid rgba(255, 250, 255, 0.137);
+    margin-bottom: 10px;
+    width: 95vw;
 }
-.aboutUs p
-{
-    opacity: 1;
-}
-#B
+#Subjects
 {
     background-image: linear-gradient(to right,blue, purple);
 }
