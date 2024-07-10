@@ -106,5 +106,7 @@ nav img
 }
 #socialIcons
 {
-    
+    position: relative;
+    margin:10px;
+    top:50px;
 }
