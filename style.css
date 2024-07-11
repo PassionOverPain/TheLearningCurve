@@ -197,7 +197,7 @@ main
 }
 section
 {
-    height: 100vh;
+    height: fit-content;
 }
 #About
 {
@@ -345,12 +345,17 @@ section
     align-items: center;
     text-align: center;
     background-image: linear-gradient(to right,blue, purple);
+   
 }
 #Card
 {
     width: fit-content;
     backdrop-filter: blur(0px);
     background-color:rgba(92, 2, 73, 0.377);
+}
+#Tutor
+{
+    width:fit-content;
 }
 .card
 {
