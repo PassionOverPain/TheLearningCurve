@@ -387,6 +387,7 @@ footer
     justify-content:space-evenly;
     height: 25vh;
     background-color: rgb(3, 2, 92);
+    position: relative;
 }
 #leftfoot
 {
@@ -411,6 +412,7 @@ footer
 #rights
 {
     position:absolute;
-    top:339vh;
-    left:35vw;
+    display: inline-block;
+    top:15vh;
+    left:30vw;
 }
