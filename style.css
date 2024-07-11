@@ -79,27 +79,28 @@ nav img
 }
 #HomePage
 {
+    
     display: flex;
     justify-content: space-between ;
     text-align: center;
-    
 }
 #RightContent
 {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items:start;
+    align-items:center;
     width:50vw;
-    background-color: rgba(4, 2, 92, 0.459);
+    background-color: rgba(4, 2, 92, 0.329);
     backdrop-filter: blur(10px);
     height: 100vh;
 }
 video
 {
-    width: 30vw;
+    margin-top: 10vh;
+    width: 25vw;
     border-radius: 100px;
-    opacity: 1;
 }
+
 #slogan
 {
     position: relative;
@@ -309,10 +310,20 @@ section
 }
 #Subjects
 {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: fit-content;
+}
+#Card
+{
+    font-size: 0.8rem;
+}
+.arrow
+{
+    font-size: 40px;
+    cursor: pointer;
 }
 #Tutors
 {
@@ -324,15 +335,15 @@ section
 }
 .card
 {
-    cursor: pointer;
     margin: 10px;
-    font-size: 1.4rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
     background-color: rgba(4, 2, 92, 0.253);
     backdrop-filter: blur(10px);
-    margin-right: 15px;
     padding: 25px;
     height: fit-content;
-    width: 50vw;
+    width: 20vw;
 }
 #Business
 {
