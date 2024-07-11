@@ -58,7 +58,6 @@ function display()
             desc.textContent = "Unlock your potential in mathematics." +
                      "Are you tackling algebra, calculus, or geometry? Fear Not: our proven methods and personalized approach empower students to excel in their mathematical studies." +
                      "Join us at The Learning Curve and experience the difference in your mathematical journey."; break;
-        }
-        
+        } 
     }
 }
