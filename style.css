@@ -86,15 +86,19 @@ nav img
 }
 #RightContent
 {
+    display: flex;
+    justify-content: center;
+    align-items:start;
     width:50vw;
-    background-color: red;
+    background-color: rgba(4, 2, 92, 0.459);
+    backdrop-filter: blur(10px);
     height: 100vh;
 }
 video
 {
-    width: 50vw;
-    border-radius: 15px;
-    opacity: 0.7;
+    width: 30vw;
+    border-radius: 100px;
+    opacity: 1;
 }
 #slogan
 {
