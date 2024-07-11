@@ -4,7 +4,7 @@ let subNum = 0;
 function increaseNum()
 {
     subNum+=1;
-    display();
+    window.alert(`The number is ${subNum}`);
 }
 function decreaseNum()
 {
@@ -13,7 +13,6 @@ function decreaseNum()
 }
 function display()
 {
-    window.alert(`The number is ${subNum}`);
     switch(subNum)
     {
         case 0 :
@@ -21,7 +20,7 @@ function display()
             title.textContent = "Accounting";
             desc.textContent ="We specialize in demystifying balance sheets, income statements, and cash flows."+
                     "Whether you're starting out or aiming for mastery, our expert tutors will guide you through financial analysis and reporting, ensuring you gain both understanding and practical skills."+
-                    "Find the balance between learning and having numerical fun."; break
+                    "Find the balance between learning and having numerical fun."; break;
         }
         case 1 :
         {
@@ -36,7 +35,7 @@ function display()
             desc.textContent ="Elevate your English skills with The Learning Curve's premier tutoring services. Our experienced tutors specialize in enhancing comprehension, grammar, writing, and critical analysis skills."+
                      "Through personalized sessions, we foster a deep understanding of literature and language, empowering students to articulate their thoughts effectively."+
                      "Whether preparing for exams, honing writing abilities, or exploring literary classics, The Learning Curve provides the tools and support needed for academic excellence in English."
-                     "Step into success with us and watch your proficiency soar."; break
+                     "Step into success with us and watch your proficiency soar."; break;
         }
         case 3 : 
         {
