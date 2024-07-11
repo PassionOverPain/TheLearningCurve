@@ -19,7 +19,7 @@ body
 {
     min-height: fit-content;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:sans-serif;
 }
 #brandName
 {
@@ -298,7 +298,7 @@ section
 }
 #Logo
 {
-    width: 30.2rem;
+    width:40%;
      border-radius:100%;
      z-index: 1000;
 }
@@ -414,5 +414,5 @@ footer
     position:absolute;
     display: inline-block;
     top:15vh;
-    left:30vw;
+    left:40vw;
 }
