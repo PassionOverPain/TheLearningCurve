@@ -94,13 +94,15 @@ nav img
     backdrop-filter: blur(10px);
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 video
 {
     position: absolute;
-    top: 0;
-    right: 45vw;
-    width:23.3vw;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 1vh;
 }
 
