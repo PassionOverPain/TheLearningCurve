@@ -334,6 +334,10 @@ section
     font-size: 40px;
     cursor: pointer;
 }
+.arrow:hover
+{
+    transform:scale(0.5);
+}
 #Tutors
 {
     display: flex;
