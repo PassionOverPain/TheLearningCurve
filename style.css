@@ -183,9 +183,14 @@ input
     border-radius: 15px;
     border: none;
     margin-bottom: 15px;
-    display: inline-block;
+    display: inline;
     padding: 5px;
     text-align: center;
+    float:right
+}
+label
+{
+    font-size: 1.2rem;
 }
 #socialIcons
 {
