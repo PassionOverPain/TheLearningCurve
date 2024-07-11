@@ -151,6 +151,11 @@ video
     background-color:rgb(3, 2, 92);
     color:white;
 }
+#booking
+{
+    position: absolute;
+    height: 1000vh;
+}
 #socialIcons
 {
     position: relative;
