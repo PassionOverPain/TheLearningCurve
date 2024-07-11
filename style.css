@@ -127,7 +127,7 @@ video
 {
     from{transform: translateY(50%);}
 }
-#book
+.book
 {
     display: inline-block;
     position: relative;
@@ -146,7 +146,7 @@ video
 {
     from{transform: translateX(-300px);}
 }
-#book:hover 
+.book:hover 
 {
     background-color:rgb(3, 2, 92);
     color:white;
