@@ -12,7 +12,7 @@ html
 header
 {
     position: relative;
-    height: fit-content;
+    height: 100vh;
     background-image: linear-gradient(to right,purple, blue);
 }
 body
@@ -83,7 +83,6 @@ nav img
     display: flex;
     justify-content: space-between ;
     text-align: center;
-    height: fit-content;
 }
 #RightContent
 {
@@ -93,7 +92,7 @@ nav img
     width:50vw;
     background-color: rgba(4, 2, 92, 0.329);
     backdrop-filter: blur(10px);
-    height: fit-content
+    height: 100vh;
 }
 video
 {
@@ -323,7 +322,7 @@ section
 }
 #desc
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .arrow
 {
