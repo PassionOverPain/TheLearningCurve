@@ -35,8 +35,8 @@ function display()
         {
             title.textContent = "Accounting";
             desc.textContent ="We specialize in demystifying balance sheets, income statements, and cash flows."+
-                    "Whether you're starting out or aiming for mastery, our expert tutors will guide you through financial analysis and reporting, ensuring you gain both understanding and practical skills."+
-                    "Find the balance between learning and having numerical fun."; break;
+                    "Whether you're starting out or aiming for mastery, our tutors will guide you through financial analysis and reporting, ensuring you gain both understanding and practical skills."+
+                    "Find the balance between learning and having fun."; break;
         }
         case 1 :
         {
@@ -48,15 +48,15 @@ function display()
         case 2 :
         {
             title.textContent = "English";
-            desc.textContent ="Elevate your English skills with The Learning Curve's premier tutoring services. Our experienced tutors specialize in enhancing comprehension, grammar, writing, and critical analysis skills."+
-                     "Through personalized sessions, we foster a deep understanding of literature and language, empowering students to articulate their thoughts effectively."+
+            desc.textContent ="Our experienced tutors specialize in enhancing comprehension, grammar, writing, and critical analysis skills."+
+                     "Through personalized sessions, we foster a deep understanding of literature and language, allowing students to articulate their thoughts effectively."+
                      "Step into success with us and watch your proficiency soar."; break;
         }
         case 3 : 
         {
             title.textContent = "Math";
-            desc.textContent = "Unlock your potential in mathematics with The Learning Curve's expert tutoring services." +
-                     "Are you struggling with tackling algebra, calculus, or geometry? Fear Not: our proven methods and personalized approach empower students to excel in their mathematical studies." +
+            desc.textContent = "Unlock your potential in mathematics." +
+                     "Are you tackling algebra, calculus, or geometry? Fear Not: our proven methods and personalized approach empower students to excel in their mathematical studies." +
                      "Join us at The Learning Curve and experience the difference in your mathematical journey."; break;
         }
         
