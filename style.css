@@ -153,8 +153,11 @@ video
 }
 #booking
 {
+    display: none;
+    top:15vh;
+    width: 50vw;
     position: absolute;
-    height: 1000vh;
+    height: 50vh;
 }
 #socialIcons
 {
