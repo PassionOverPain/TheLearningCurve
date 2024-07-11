@@ -162,6 +162,20 @@ video
     position: absolute;
     height: 50vh;
 }
+#backbtn
+{
+    position: absolute;
+    top:0;
+    right:-100;
+    font-size: 40px;
+    cursor: pointer;
+}
+#bookbtn
+{
+    left:0;
+    padding: 5px;
+    margin-top: 10px;
+}
 input
 {
     display: inline-block;
