@@ -29,6 +29,7 @@ function decreaseNum()
 }
 function display()
 {
+    title.textContent = "";
     switch(subNum)
     {
         case 0 :
@@ -74,7 +75,7 @@ const Namebox = document.getElementById("Name");
 const Surnamebox = document.getElementById("Surname");
 const Emailbox = document.getElementById("Email");
 const letters = /^[a-zA-Z]*$/; 
-function Submit()
+function submit()
 {
 
     let Name = Namebox.value;
@@ -91,15 +92,16 @@ function Submit()
             window.alert("Your name must contain Only Alphabets.");
             Namebox.focus();
         }
+        else
         if (Surname =="")   
             {
-                window.alert("Please complete the Name field.");
+                window.alert("Please complete the Surname field.");
                 Surname.focus();
             }
             else
             if(!Surname.match(letters))
             {
-                window.alert("Your name must contain Only Alphabets.");
+                window.alert("Your surname must contain Only Alphabets.");
                 Surnamebox.focus();
             }
         else
