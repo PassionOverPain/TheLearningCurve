@@ -3,13 +3,29 @@ let desc = document.getElementById('desc');
 let subNum = 0;
 function increaseNum()
 {
-    subNum+=1;
-    window.alert(`The number is ${subNum}`);
+    if(subNum==3)
+    {
+        subNum = 0;
+    }
+    else
+    {
+        subNum+=1;
+    }
+
+   display();
+
 }
 function decreaseNum()
 {
-    subNum-=1;
-    display();
+    if(subNum==0)
+        {
+            subNum = 3;
+        }
+        else
+        {
+            subNum-=1;
+        }
+        display();
 }
 function display()
 {
@@ -25,7 +41,7 @@ function display()
         case 1 :
         {
             title.textContent = "Business";
-             desc.textContent = "Delve into the realm of business with us! At The Learning Curve, our experienced tutors focus on empowering you with vital knowledge in finance, marketing, and management. 
+             desc.textContent = "Delve into the realm of business with us! At The Learning Curve, our experienced tutors focus on empowering you with vital knowledge in finance, marketing, and management." + 
              "Having a business orientated mind is crucial in the economic age we find ourseleves, do not fall behind!"+
              "The equilibrium awaits you."; break;
         }
