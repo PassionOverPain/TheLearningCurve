@@ -197,6 +197,7 @@ main
 }
 section
 {
+    position: relative;
     height: fit-content;
 }
 #About
@@ -340,6 +341,7 @@ section
 }
 #Tutors
 {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,7 +358,7 @@ section
 }
 #Tutor
 {
-    height: fit-content;
+   
     width:fit-content;
 }
 .card
