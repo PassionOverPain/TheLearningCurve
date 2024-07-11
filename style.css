@@ -93,12 +93,15 @@ nav img
     background-color: rgba(4, 2, 92, 0.329);
     backdrop-filter: blur(10px);
     height: 100vh;
+    position: relative;
 }
 video
 {
-    margin-top: 10vh;
-    width: 25vw;
-    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 45vw;
+    width:23.3vw;
+    border-radius: 1vh;
 }
 
 #slogan
@@ -316,10 +319,7 @@ section
     text-align: center;
     height: fit-content;
 }
-#Card
-{
 
-}
 #desc
 {
     font-size: 0.8rem;
@@ -336,6 +336,11 @@ section
     align-items: center;
     text-align: center;
     background-image: linear-gradient(to right,blue, purple);
+}
+#Card
+{
+    backdrop-filter: blur(0px);
+    background-color: rgba(80, 18, 75, 0.253);
 }
 .card
 {
