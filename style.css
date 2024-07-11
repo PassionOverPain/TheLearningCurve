@@ -152,12 +152,13 @@ video
     color:white;
 }
 #booking
-{   display: grid;
-    justify-content: center;
+{   cursor: default;
+    display: grid;
+    justify-content:center;
     text-align: center;
-    align-items: center;
+    align-items:center;
     top:15vh;
-    width: 50vw;
+    width: 40vw;
     position: absolute;
     height: 50vh;
 }
