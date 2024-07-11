@@ -132,7 +132,10 @@ function submit()
     }
     else
     {
-        window.alert(`Thnak you for reaching out to us ${Name}. We will be in touch with you at ${Email} shortly`);
-        window.open(`mailto:tinomhedziso@gmail.com?subject=Tutoring Class&body=Good Day The Learning Curve Team ${<br></br>} My Name is ${Name} ${Surname}, a learner in grade ${Grade} who would like to acquire tutoring classes for subjects. Please feel free to respond to me at ${Email} Thank You.`);
+        const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
+        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to bok tutoring classes for programming. Please feel free to respond to this message at ${Email}}`);
+        window.alert(`Thnak you for reaching out to us ${Name}. We wilutoring Classl be in touch with you at ${Email} shortly`);
+        const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+        window.open(link,`_blank`);
     }
 }
