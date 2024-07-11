@@ -317,6 +317,7 @@ section
 }
 #Subjects
 {
+    width: fit-content;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -326,7 +327,7 @@ section
 
 #desc
 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 .arrow
 {
@@ -343,8 +344,9 @@ section
 }
 #Card
 {
+    width: fit-content;
     backdrop-filter: blur(0px);
-    background-color: rgba(80, 18, 75, 0.253);
+    background-color:rgba(92, 2, 73, 0.377);
 }
 .card
 {
