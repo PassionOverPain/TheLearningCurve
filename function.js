@@ -70,3 +70,52 @@ function openTab()
 {
     booking.style.display ='grid';
 }
+const Namebox = document.getElementById("Name");
+const Surnamebox = document.getElementById("Surname");
+const Emailbox = document.getElementById("Email");
+const letters = /^[a-zA-Z]*$/; 
+function Submit()
+{
+
+    let Name = Namebox.value;
+    let Surname = Surnamebox.value;
+    let Email = Emailbox.value;
+    if (Name =="")   
+        {
+            window.alert("Please complete the Name field.");
+            Namebox.focus();
+        }
+        else
+        if(!Name.match(letters))
+        {
+            window.alert("Your name must contain Only Alphabets.");
+            Namebox.focus();
+        }
+        if (Surname =="")   
+            {
+                window.alert("Please complete the Name field.");
+                Surname.focus();
+            }
+            else
+            if(!Surname.match(letters))
+            {
+                window.alert("Your name must contain Only Alphabets.");
+                Surnamebox.focus();
+            }
+        else
+    //Email Validation starts here// 
+    if (Email =="")
+        {
+                window.alert("Please complete the Email field.");
+        }
+    else
+    if(!Email.includes("@") ||!Email.includes(".") )
+    {
+        window.alert("The Email you have entered is Invalid.")
+        Emailbox.focus();
+    }
+    else
+    {
+        window.alert(`Thnak you for reaching out to us ${Name}. We will be in touch with you at ${Email} shortly`)
+    }
+}
