@@ -45,11 +45,15 @@
                 <a href="mailto:tinomhedziso21@gmail.com" class="up"><ion-icon name="mail-outline"></ion-icon></a>
             </div>
              <div class="card" id="booking">
+                
                 <ion-icon name="close-circle-outline" id="backbtn" onclick="closeTab()"></ion-icon>
+                <div id="topBook">
                 <input type="text" placeholder="Name:" id="Name" required>
                 <input type="text" placeholder="Surname" id="Surname" required>
                 <input type="number" name="" id="Grade" placeholder="Grade" min="8" max="12" required>
                 <input type="email" name="" id="Email" placeholder="Email" required>
+                </div>
+                <div id="bottomBook">
                 <label for="Accounting">Accounting</label>
                 <input type="checkbox" name="Subject" id="Accounting">
                 <label for="Business">Business</label>
@@ -58,6 +62,18 @@
                 <input type="checkbox" name="Subject" id="English">
                 <label for="Math">Math</label>
                 <input type="checkbox" name="Subject" id="Math">
+                <fieldset>
+                    <label for="">Pick a preferred date to begin your lessons: <br>
+                    <input type="date" name="" id="date" min="2024-07-11" max="2024-12-31">
+                    </label>
+                </fieldset>
+                <label for="Basic">Basic Plan</label>
+                <input type="radio" name="Pricing" id="Basic" checked>
+                <label for="Standard">Standard Plan</label>
+                <input type="radio" name="Pricing" id="Standard">
+                <label for="Premium">Premium Plan</label>
+                <input type="radio" name="Pricing" id="Premium">
+                </div>
                 <label class="book" id="bookbtn" onclick="submit()">Book</label>
              </div>       
         </div>

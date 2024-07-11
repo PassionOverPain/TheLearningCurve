@@ -154,6 +154,7 @@ video
 #booking
 {   cursor: default;
     display: grid;
+    gap: 20px;
     justify-content:center;
     text-align: center;
     align-items:center;
@@ -186,6 +187,10 @@ input
     display: inline;
     padding: 5px;
     text-align: center;
+}
+fieldset
+{
+    border: none;
 }
 label
 {
