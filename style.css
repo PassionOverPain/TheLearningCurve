@@ -313,7 +313,7 @@ section
     -webkit-backdrop-filter: blur(50px);
     border-top: 1px solid rgba(255, 250, 255, 0.137);
     border-left: 1px solid rgba(255, 250, 255, 0.137);
-    margin-bottom: 10px;
+    margin-bottom: 15vh;
     width: 95vw;
 }
 #Subjects
