@@ -160,7 +160,7 @@ video
     top:15vh;
     width: 40vw;
     position: absolute;
-    height: 50vh;
+    height: fit-content;
 }
 #backbtn
 {
@@ -178,7 +178,14 @@ video
 }
 input
 {
+    color:black;
+    background-image: linear-gradient(to right,purple,blue);
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 15px;
     display: inline-block;
+    padding: 5px;
+    text-align: center;
 }
 #socialIcons
 {
