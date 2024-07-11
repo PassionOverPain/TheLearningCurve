@@ -90,6 +90,12 @@ nav img
     background-color: red;
     height: 100vh;
 }
+video
+{
+    width: 50vw;
+    border-radius: 15px;
+    opacity: 0.7;
+}
 #slogan
 {
     position: relative;
