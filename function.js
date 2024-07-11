@@ -74,6 +74,7 @@ function openTab()
 const Namebox = document.getElementById("Name");
 const Surnamebox = document.getElementById("Surname");
 const Emailbox = document.getElementById("Email");
+const Gradebox = document.getElementById("Grade");
 const letters = /^[a-zA-Z]*$/; 
 function submit()
 {
@@ -81,6 +82,7 @@ function submit()
     let Name = Namebox.value;
     let Surname = Surnamebox.value;
     let Email = Emailbox.value;
+    let Grade = Gradebox.value;
     if (Name =="")   
         {
             window.alert("Please complete the Name field.");
@@ -96,13 +98,25 @@ function submit()
         if (Surname =="")   
             {
                 window.alert("Please complete the Surname field.");
-                Surname.focus();
+                Surnamebox.focus();
             }
             else
             if(!Surname.match(letters))
             {
                 window.alert("Your surname must contain Only Alphabets.");
                 Surnamebox.focus();
+            }
+        else
+        if(Grade=="")
+            {
+                window.alert("Please enter your grade.");
+                Gradebox.focus;
+            }
+            else
+            if(Grade>12 || Grade<8)
+            {
+                window.alert("Please enter a valid grade. Note that currently we are only operating from Grade 8 to 12.");
+                Gradebox.focus;
             }
         else
     //Email Validation starts here// 
