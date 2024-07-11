@@ -62,11 +62,11 @@ function display()
     }
 }
 const booking = document.getElementById('booking');
-function closetab()
+function closeTab()
 {
     booking.style.display ='none';
 }
-function opentab()
+function openTab()
 {
     booking.style.display ='grid';
 }
