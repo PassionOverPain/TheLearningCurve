@@ -61,3 +61,12 @@ function display()
         } 
     }
 }
+const booking = document.getElementById('booking');
+function closetab()
+{
+    booking.style.display ='none';
+}
+function opentab()
+{
+    booking.style.display ='grid';
+}
