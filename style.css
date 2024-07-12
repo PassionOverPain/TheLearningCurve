@@ -446,7 +446,7 @@ footer {
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
   position: fixed;
-  background-color: rgb(3, 2, 92);
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -496,5 +496,14 @@ ul a {
   }
   #Pricing {
     display: grid;
+  }
+  #rightContent {
+    width: 100vw;
+  }
+  #slogan {
+    font-size: var(--bigfont);
+  }
+  #socialIcons {
+    right: 0px;
   }
 }
