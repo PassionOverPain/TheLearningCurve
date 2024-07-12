@@ -7,8 +7,10 @@
   list-style: none;
   --smallfont: 0.8rem;
   --mainfont: 1.2rem;
-  --bigfont: 1.3rem;
-  --XLfont: 1.7rem;
+  --bigfont: 1.5rem;
+  --XLfont: 2.3rem;
+  --bottompad: 100px;
+  --toppad: 100px;
 }
 html {
   scroll-behavior: smooth;
@@ -29,7 +31,7 @@ body {
 }
 #brandName {
   line-height: 55px;
-  font-size: 1.3rem;
+  font-size: var(--bigfont);
 }
 nav {
   position: fixed;
@@ -46,7 +48,7 @@ nav ul {
   justify-content: end;
   position: relative;
   line-height: 35px;
-  font-size: 1.2rem;
+  font-size: var(--mainfont);
 }
 nav ul li {
   display: inline;
@@ -107,7 +109,7 @@ video {
   width: fit-content;
   height: 50vh;
   display: flex;
-  font-size: 2.4rem;
+  font-size: var(--XLfont);
   align-items: center;
   animation-name: slideup;
   animation-duration: 2s;
@@ -160,7 +162,7 @@ video {
   position: absolute;
   top: 0;
   right: -100;
-  font-size: 40px;
+  font-size: var(--bigfont);
   cursor: pointer;
 }
 #backbtn:hover {
@@ -186,7 +188,7 @@ fieldset {
   border: none;
 }
 label {
-  font-size: 100%;
+  font-size: var(--bigfont);
 }
 #socialIcons {
   position: relative;
@@ -198,7 +200,7 @@ label {
 #socialIcons a {
   display: inline-block;
   color: black;
-  font-size: 1.8rem;
+  font-size: var(--bigfont);
 }
 #socialIcons a:hover {
   animation-play-state: paused;
@@ -336,14 +338,15 @@ section {
   padding: 50px;
   background-color: rgba(4, 2, 92, 0.253);
   border-radius: 20px;
-  font-size: 1.4rem;
+  font-size: var(--mainfont);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(50px);
   border-top: 1px solid rgba(255, 250, 255, 0.137);
   border-left: 1px solid rgba(255, 250, 255, 0.137);
   width: 95vw;
   height: fit-content;
-  margin-bottom: 100px;
+  margin-top: var(--toppad);
+  margin-bottom: var(--bottompad);
 }
 #Subjects {
   width: fit-content;
@@ -355,10 +358,10 @@ section {
 }
 
 #desc {
-  font-size: 1.2rem;
+  font-size: var(--mainfont);
 }
 .arrow {
-  font-size: 40px;
+  font-size: var(--XLfont);
   cursor: pointer;
 }
 .arrow:hover {
@@ -378,16 +381,18 @@ section {
   background-color: rgba(92, 2, 73, 0.377);
 }
 #Tutor {
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: var(--bottompad);
+  margin-top: var(--toppad);
   width: fit-content;
-  font-size: 1.4rem;
+  font-size: var(--mainfont);
 }
 .card {
   margin: 15px;
+  margin-bottom: var(--bottompad);
+  margin-top: var(--toppad);
   display: inline-block;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: var(--mainfont);
   background-color: rgba(4, 2, 92, 0.253);
   backdrop-filter: blur(10px);
   padding: 25px;
