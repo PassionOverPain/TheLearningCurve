@@ -144,14 +144,36 @@ const letters = /^[a-zA-Z]*$/;
     }
     else
     {
-    
-
-        const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
-        const datePicker = document.getElementById('datePicker');
-        date = datePicker.value;
-        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team ${br}, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for programming that will start ${date}. Please feel free to respond to this message at ${Email}`);
-        window.alert(`Thnak you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`);
-        const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
-        window.open(link,`_blank`);
+        book();
+    }
+}
+function book()
+{
+    const subjects = document.getElementsByName("Subject");
+    let words ="";
+    let countsub = 0;
+    subjects.forEach(subject => 
+    {
+        if(subject.checked)
+        {
+            countsub === 0 ? words += subject.title : words += ", " + subject.title;
+            ++countsub;
+        }   
+    });
+    if (countsub===0)
+        {
+            window.Error(`Please select a subject to be tutored in before proceeding.`)
+        }
+    else
+    {
+    window.prompt(`The subjects are ${words} `);
+    // const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
+    // const datePicker = document.getElementById('datePicker');
+    // date = datePicker.value;
+    // const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for programming that will start ${date}. Please feel free to respond to this message at ${Email}`);
+    // window.alert(`Thnak you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`);
+    // const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+    // window.open(link,`_blank`);
+    countsub = 0;
     }
 }
