@@ -1,101 +1,154 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>The Learning Curve</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div>
-            <img src="Images/Logo.jpg" alt="This is Learning Curve's Logo">
-            <label id="brandName">The Learning Curve</label>
-            </div>
-            <ul class="navigation">
-                <li>
-                <a href="index.html">Home <ion-icon name="home-outline"></ion-icon></a>
-                </li>
-                <li>
-                <a href="Main.html">About Us<ion-icon name="help-circle-outline"></ion-icon></a>
-                </li>
-                <li>
-                <a href="Main.html#Tutors">Tutors<ion-icon name="people-outline"></ion-icon></a>
-                </li>
-                <li>
-                <a href="Main.html#Pricing">Pricing<ion-icon name="cash-outline"></ion-icon></a>
-                </li>
-                <li>
-                <a href="Main.html#Contact">Contact Us<ion-icon name="call-outline"></ion-icon></a>
-                </li> 
-            </ul>
-        </nav>
-        <section id="HomePage">
+      <nav>
+        <div>
+          <img src="Images/Logo.jpg" alt="This is Learning Curve's Logo" />
+          <label id="brandName">The Learning Curve</label>
+        </div>
+        <ul class="navigation">
+          <li>
+            <a href="index.html"
+              >Home <ion-icon name="home-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="Main.html"
+              >About Us<ion-icon name="help-circle-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="Main.html#Tutors"
+              >Tutors<ion-icon name="people-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="Main.html#Pricing"
+              >Pricing<ion-icon name="cash-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="Main.html#Contact"
+              >Contact Us<ion-icon name="call-outline"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section id="HomePage">
         <div id="LeftContent">
-           <div id="slogan">
-            <i>Forget Netflix <br>Binge Learn with Us</i>
-           </div>
-           <label id="book" class="book" onclick="openTab()">Book Class</label>
-            <div id="socialIcons">
-                <a href="https://www.facebook.com/" class="up"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://www.linkedin/in/" class="down"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="" class="up"><ion-icon name="call-outline"></ion-icon></a>
-                <a href="" class="down"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a href="mailto:tinomhedziso21@gmail.com" class="up"><ion-icon name="mail-outline"></ion-icon></a>
+          <div id="slogan">
+            <i>Forget Netflix <br />Binge Learn with Us</i>
+          </div>
+          <label id="book" class="book" onclick="openTab()">Book Class</label>
+          <div id="socialIcons">
+            <a href="https://www.facebook.com/" class="up"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://www.linkedin/in/" class="down"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="" class="up"><ion-icon name="call-outline"></ion-icon></a>
+            <a href="" class="down"
+              ><ion-icon name="logo-whatsapp"></ion-icon
+            ></a>
+            <a href="mailto:tinomhedziso21@gmail.com" class="up"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="card" id="booking">
+            <ion-icon
+              name="close-circle-outline"
+              id="backbtn"
+              onclick="closeTab()"></ion-icon>
+            <div id="topBook">
+              <input type="text" placeholder="Name:" id="Name" required />
+              <input type="text" placeholder="Surname" id="Surname" required />
+              <input
+                type="number"
+                name=""
+                id="Grade"
+                placeholder="Grade"
+                min="8"
+                max="12"
+                required />
+              <input
+                type="email"
+                name=""
+                id="Email"
+                placeholder="Email"
+                required />
             </div>
-             <div class="card" id="booking">
-                
-                <ion-icon name="close-circle-outline" id="backbtn" onclick="closeTab()"></ion-icon>
-                <div id="topBook">
-                <input type="text" placeholder="Name:" id="Name" required>
-                <input type="text" placeholder="Surname" id="Surname" required>
-                <input type="number" name="" id="Grade" placeholder="Grade" min="8" max="12" required>
-                <input type="email" name="" id="Email" placeholder="Email" required>
-                </div>
-                <div id="bottomBook">
-                <label for="Accounting">Accounting</label>
-                <input type="checkbox" name="Subject" title="Accounting">
-                <label for="Business">Business</label>
-                <input type="checkbox" name="Subject"  title="Business">
-                <label for="English">English</label>
-                <input type="checkbox" name="Subject" title="English">
-                <label for="Math">Math</label>
-                <input type="checkbox" name="Subject"  title="Mathematics">
-                <fieldset>
-                    <label for="">Pick a preferred date to begin your lessons: <br>
-                    <input type="date" name="" id="datePicker" >
-                    </label>
-                </fieldset>
-                <label for="Basic">Basic Plan</label>
-                <input type="radio" name="Pricing" title="Basic" checked>
-                <label for="Standard">Standard Plan</label>
-                <input type="radio" name="Pricing" title="Standard">
-                <label for="Premium">Premium Plan</label>
-                <input type="radio" name="Pricing" title="Premium">
-                </div>
-                <label class="book" id="bookbtn" onclick="submit()">Book</label>
-             </div>       
+            <div id="bottomBook">
+              <label for="Accounting">Accounting</label>
+              <input type="checkbox" name="Subject" title="Accounting" />
+              <label for="Business">Business</label>
+              <input type="checkbox" name="Subject" title="Business" />
+              <label for="English">English</label>
+              <input type="checkbox" name="Subject" title="English" />
+              <label for="Math">Math</label>
+              <input type="checkbox" name="Subject" title="Mathematics" />
+              <fieldset>
+                <label for=""
+                  >Pick a preferred date to begin your lessons: <br />
+                  <input type="date" name="" id="datePicker" />
+                </label>
+              </fieldset>
+              <label for="Basic">Basic Plan</label>
+              <input type="radio" name="Pricing" title="Basic" checked />
+              <label for="Standard">Standard Plan</label>
+              <input type="radio" name="Pricing" title="Standard" />
+              <label for="Premium">Premium Plan</label>
+              <input type="radio" name="Pricing" title="Premium" />
+            </div>
+            <label class="book" id="bookbtn" onclick="submit()">Book</label>
+          </div>
         </div>
         <div id="RightContent">
-            <video src="Images/student.mp4" plays-inline autoplay muted loop></video>
-               <section id="Subjects">
-                <ion-icon class="arrow" name="arrow-back-circle-outline" onclick="decreaseNum()"></ion-icon>
-                <div class="card" id="Card">
-                    <h4 id="title">Accounting</h4>
-                     <p id="desc">
-                    "We specialize in demystifying balance sheets, income statements, and cash flows.
-                    Whether you're starting out or aiming for mastery, our expert tutors will guide you through financial analysis and reporting, ensuring you gain both understanding and practical skills.
-                    Find the balance between learning and having numerical fun."
-                     </p>   
-                </div>
-                <ion-icon class="arrow" name="arrow-forward-circle-outline" onclick="increaseNum()"></ion-icon>
-               </section>
+          <video
+            src="Images/student.mp4"
+            plays-inline
+            autoplay
+            muted
+            loop></video>
+          <section id="Subjects">
+            <ion-icon
+              class="arrow"
+              name="arrow-back-circle-outline"
+              onclick="decreaseNum()"></ion-icon>
+            <div class="card" id="Card">
+              <h4 id="title">Accounting</h4>
+              <p id="desc">
+                "We specialize in demystifying balance sheets, income
+                statements, and cash flows. Whether you're starting out or
+                aiming for mastery, our expert tutors will guide you through
+                financial analysis and reporting, ensuring you gain both
+                understanding and practical skills. Find the balance between
+                learning and having numerical fun."
+              </p>
+            </div>
+            <ion-icon
+              class="arrow"
+              name="arrow-forward-circle-outline"
+              onclick="increaseNum()"></ion-icon>
+          </section>
         </div>
-        </section>
+      </section>
     </header>
-<script src="function.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script src="function.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

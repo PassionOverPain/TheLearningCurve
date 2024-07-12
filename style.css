@@ -1,466 +1,422 @@
-*
-{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-    list-style: none;
+/** @format */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
 }
-html
-{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-header
-{
-    position: relative;
-    height: 100vh;
-    background-image: linear-gradient(to right,purple, blue);
+header {
+  position: relative;
+  height: fit-content;
+  background-image: linear-gradient(to right, purple, blue);
 }
-body
-{
-    min-height: fit-content;
-    align-items: center;
-    font-family:sans-serif;
+body {
+  min-height: fit-content;
+  align-items: center;
+  font-family: sans-serif;
 }
-#brandName
-{
-    line-height: 55px;
-    font-size: 1.5rem;
+#brandName {
+  line-height: 55px;
+  font-size: 1.5rem;
 }
-nav
-{
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    background-color: rgb(3, 2, 92);
-    z-index: 1000;
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  background-color: rgb(3, 2, 92);
+  z-index: 1000;
 }
 
-nav ul
-{
-    display: block;
-    justify-content: end;
-    position: relative;
-    line-height: 35px;
-    font-size: 1.2rem;
+nav ul {
+  display: block;
+  justify-content: end;
+  position: relative;
+  line-height: 35px;
+  font-size: 1.2rem;
 }
-nav ul li 
-{
-    display: inline;
-    margin:10px;
-    
+nav ul li {
+  display: inline;
+  margin: 10px;
 }
-nav ul li a:hover
-{
-    border-bottom: purple solid 2px;
+nav ul li a:hover {
+  border-bottom: purple solid 2px;
 }
-.navigation a
-{
-    text-decoration: none;
-    line-height: 50px;
-    margin-right: 5px;
-    color: #000;
+.navigation a {
+  text-decoration: none;
+  line-height: 50px;
+  margin-right: 5px;
+  color: #000;
 }
-.navigation a ion-icon
-{
-    position: relative;
-    top:2px;
+.navigation a ion-icon {
+  position: relative;
+  top: 2px;
 }
-nav img
-{
-    float: left;
-    width:4vw;
-    border-radius: 15px;
+nav img {
+  float: left;
+  width: 4vw;
+  border-radius: 15px;
 }
-#LeftContent
-{
-    display: inline-block;
+#LeftContent {
+  display: inline-block;
 }
-#HomePage
-{
-    
-    display: flex;
-    justify-content: space-between ;
-    text-align: center;
+#HomePage {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
-#RightContent
-{
-    display: grid;
-    justify-content: center;
-    align-items:center;
-    width:50vw;
-    background-color: rgba(4, 2, 92, 0.329);
-    backdrop-filter: blur(10px);
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+#RightContent {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: rgba(4, 2, 92, 0.329);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
-video
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 1vh;
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 1vh;
 }
 
-#slogan
-{
-    position: relative;
-    top:10vh;
-    margin-left: 40px;
-    width: fit-content;
-    height: 50vh;
-    display: flex;
-    font-size: 2.4rem;
-    align-items: center;
-    animation-name: slideup;
-    animation-duration: 2s;
-    animation-delay: 0;
-    animation-iteration-count: 1;
+#slogan {
+  position: relative;
+  top: 10vh;
+  margin-left: 40px;
+  width: fit-content;
+  height: 50vh;
+  display: flex;
+  font-size: 2.4rem;
+  align-items: center;
+  animation-name: slideup;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
 }
-@keyframes slideup 
-{
-    from{transform: translateY(50%);}
+@keyframes slideup {
+  from {
+    transform: translateY(50%);
+  }
 }
-.book
-{
-    display: inline-block;
-    position: relative;
-    left: 3vw;
-    background-color: transparent;
-    padding: 12px;
-    border: solid #000 1px;
-    animation-name: slideleft;
-    animation-duration: 2s;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    transition: background-color 0.5s;
-    cursor: pointer;
+.book {
+  display: inline-block;
+  position: relative;
+  left: 3vw;
+  background-color: transparent;
+  padding: 12px;
+  border: solid #000 1px;
+  animation-name: slideleft;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  transition: background-color 0.5s;
+  cursor: pointer;
 }
-@keyframes slideleft /*Does not work ? *?*/
-{
-    from{transform: translateX(-300px);}
+@keyframes slideleft /*Does not work ? *?*/ {
+  from {
+    transform: translateX(-300px);
+  }
 }
-.book:hover 
-{
-    background-color:rgb(3, 2, 92);
-    color:white;
+.book:hover {
+  background-color: rgb(3, 2, 92);
+  color: white;
 }
-#booking
-{   cursor: default;
-    display: grid;
-    gap: 20px;
-    justify-content:center;
-    text-align: center;
-    align-items:center;
-    top:15vh;
-    width: 40vw;
-    position: absolute;
-    height: fit-content;
+#booking {
+  z-index: 100;
+  cursor: default;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 15vh;
+  width: fit-content;
+  position: absolute;
+  height: fit-content;
 }
 
-#backbtn
-{
-    position: absolute;
-    top:0;
-    right:-100;
-    font-size: 40px;
-    cursor: pointer;
+#backbtn {
+  position: absolute;
+  top: 0;
+  right: -100;
+  font-size: 40px;
+  cursor: pointer;
 }
-#bookbtn
-{
-    left:0;
-    padding: 5px;
-    margin-top: 10px;
+#bookbtn {
+  left: 0;
+  padding: 5px;
+  margin-top: 10px;
+  width: 10vw;
 }
-input
-{
-    color:black;
-    background-image: linear-gradient(to right,purple,blue);
-    border-radius: 15px;
-    border: none;
-    margin: 15px;
-    display: inline;
-    padding: 5px;
-    text-align: center;
+input {
+  color: black;
+  background-image: linear-gradient(to right, purple, blue);
+  border-radius: 15px;
+  border: none;
+  margin: 15px;
+  display: inline;
+  padding: 5px;
+  text-align: center;
 }
-fieldset
-{
-    border: none;
+fieldset {
+  border: none;
 }
-label
-{
-    font-size: 1.2rem;
+label {
+  font-size: 1.2rem;
 }
-#socialIcons
-{
-    position: relative;
-    display: inline-block;
-    margin:10px;
-    top:90px;
-    right: 80px;
+#socialIcons {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  top: 90px;
+  right: 80px;
 }
-#socialIcons a 
-{
-    display: inline-block;
-    color: black;
-    font-size: 1.8rem;
+#socialIcons a {
+  display: inline-block;
+  color: black;
+  font-size: 1.8rem;
 }
-#socialIcons a:hover
-{
-    animation-play-state:paused;
+#socialIcons a:hover {
+  animation-play-state: paused;
 }
-.up
-{
-    animation-name: up;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.up {
+  animation-name: up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-.down
-{
-    animation-name: down;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.down {
+  animation-name: down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-@keyframes up
-{
-    50%{transform: translateY(100%);}
+@keyframes up {
+  50% {
+    transform: translateY(100%);
+  }
 }
-@keyframes down
-{
-    50%{transform: translateY(-100%);}
-   
+@keyframes down {
+  50% {
+    transform: translateY(-100%);
+  }
 }
-main
-{
+main {
   background-color: red;
   height: fit-content;
 }
-section
-{
-    position: relative;
-    height: fit-content;
+section {
+  position: relative;
+  height: fit-content;
 }
-#About
-{
-    height: fit-content;
-    position: relative;
-    bottom: -50px;
-    display: grid;
-    justify-content: center;
-    align-items:start;
-    text-align: center;
-    background-image: linear-gradient(to right,purple, blue);
+#About {
+  height: fit-content;
+  position: relative;
+  bottom: -50px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  background-image: linear-gradient(to right, purple, blue);
 }
-#words1
-{
-    position: absolute;
-    animation: wordsright 5s infinite;
-    transition: display 0.5s;
+#words1 {
+  position: absolute;
+  animation: wordsright 5s infinite;
+  transition: display 0.5s;
 }
-#words2
-{
-    position: absolute;
-    left:70vw;
-    animation: wordsleft 5s infinite;
-    transition: display 0.5s;
+#words2 {
+  position: absolute;
+  left: 70vw;
+  animation: wordsleft 5s infinite;
+  transition: display 0.5s;
 }
- @keyframes wordsright 
-{   
-    0%{opacity: 1;;}
-    50%{transform: translateX(100%);opacity: 0;}
-    100%{opacity: 1;}
+@keyframes wordsright {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes wordsleft
-{   
-    0%{opacity: 1;;}
-    50%{transform: translateX(-100%);opacity: 0;}
-    100%{opacity: 1;}
-}
-
-#LEARN
-{
-    position: relative;
-    top:50px;
-    left:25vh;
-}
-#GROW
-{
-    position: relative;
-    top:20vh;
-    left:25vh;
-}
-#EXPERIENCE
-{
-    position: relative;
-    top:35vh;
-    left:25vh;
-}
-#REFLECT
-{
-    position: relative;
-    top:50vh;
-    left:1vh;
-}
-#UNDERSTAND
-{
-    position: relative;
-    top:60vh;
-    left:-25vh;
-}
-#MATHS
-{
-    position: relative;
-    top:50px;
-    left:25vh;
-}
-#ENGLISH
-{
-    position: relative;
-    top:20vh;
-    left:0vh;
-}
-#BUSINESS
-{
-    position: relative;
-    top:35vh;
-    left:-25vh;
-}
-#ACCOUNTING
-{
-    position: relative;
-    top:50vh;
-    left:-30vh;
-}
-#EMS
-{
-    position: relative;
-    top:60vh;
-    left:-35vh;
-}
-#Logo
-{
-    width:40%;
-     border-radius:100%;
-     z-index: 1000;
-}
-.aboutUs
-{
-    padding: 50px;
-    background-color: rgba(4, 2, 92, 0.253);
-    border-radius: 20px;
-    font-size: 1.4rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(50px);
-    border-top: 1px solid rgba(255, 250, 255, 0.137);
-    border-left: 1px solid rgba(255, 250, 255, 0.137);
-    margin-bottom: 15vh;
-    width: 95vw;
-}
-#Subjects
-{
-    width: fit-content;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: fit-content;
+@keyframes wordsleft {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#desc
-{
-    font-size: 1.2rem;
+#LEARN {
+  position: relative;
+  top: 50px;
+  left: 25vh;
 }
-.arrow
-{
-    font-size: 40px;
-    cursor: pointer;
+#GROW {
+  position: relative;
+  top: 20vh;
+  left: 25vh;
 }
-.arrow:hover
-{
-    transform:scale(1.1);
+#EXPERIENCE {
+  position: relative;
+  top: 35vh;
+  left: 25vh;
 }
-#Tutors
-{  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(to right,blue, purple); 
+#REFLECT {
+  position: relative;
+  top: 50vh;
+  left: 1vh;
 }
-#Card
-{
-    margin: 10px;
-    width: fit-content;
-    backdrop-filter: blur(0px);
-    background-color:rgba(92, 2, 73, 0.377);
+#UNDERSTAND {
+  position: relative;
+  top: 60vh;
+  left: -25vh;
 }
-#Tutor
-{
-   
-    width:fit-content;
+#MATHS {
+  position: relative;
+  top: 50px;
+  left: 25vh;
 }
-.card
-{
-    margin: 15px;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.2rem;
-    background-color: rgba(4, 2, 92, 0.253);
-    backdrop-filter: blur(10px);
-    padding: 25px;
-    height: fit-content;
-    width: 20vw;
+#ENGLISH {
+  position: relative;
+  top: 20vh;
+  left: 0vh;
 }
-#Business
-{
-    line-height: 4vh;
+#BUSINESS {
+  position: relative;
+  top: 35vh;
+  left: -25vh;
 }
-#Pricing
-{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    text-align: center;
-    background-image: linear-gradient(to right,purple, blue);
+#ACCOUNTING {
+  position: relative;
+  top: 50vh;
+  left: -30vh;
 }
-footer
-{
-    display: flex;
-    justify-content:space-evenly;
-    height: 25vh;
-    background-color: rgb(3, 2, 92);
-    position: relative;
+#EMS {
+  position: relative;
+  top: 60vh;
+  left: -35vh;
 }
-#leftfoot
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 25vw;
-    height: 25vh;
-    color:white;
+#Logo {
+  width: 40%;
+  border-radius: 100%;
+  z-index: 1000;
 }
-#rightfoot
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 25vw;
-    height: 25vh;
-    color:white;
+.aboutUs {
+  padding: 50px;
+  background-color: rgba(4, 2, 92, 0.253);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
+  border-top: 1px solid rgba(255, 250, 255, 0.137);
+  border-left: 1px solid rgba(255, 250, 255, 0.137);
+  margin-bottom: 15vh;
+  width: 95vw;
 }
-#rights
-{
-    position:absolute;
-    display: inline-block;
-    top:15vh;
-    left:40vw;
+#Subjects {
+  width: fit-content;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+
+#desc {
+  font-size: 1.2rem;
+}
+.arrow {
+  font-size: 40px;
+  cursor: pointer;
+}
+.arrow:hover {
+  transform: scale(1.1);
+}
+#Tutors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, purple);
+}
+#Card {
+  margin: 10px;
+  width: fit-content;
+  backdrop-filter: blur(0px);
+  background-color: rgba(92, 2, 73, 0.377);
+}
+#Tutor {
+  width: fit-content;
+}
+.card {
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: rgba(4, 2, 92, 0.253);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  height: fit-content;
+  width: 20vw;
+}
+#Business {
+  line-height: 4vh;
+}
+#Pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, purple, blue);
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25vh;
+  background-color: rgb(3, 2, 92);
+  position: relative;
+}
+#leftfoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25vw;
+  height: 25vh;
+  color: white;
+}
+#rightfoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25vw;
+  height: 25vh;
+  color: white;
+}
+#rights {
+  position: absolute;
+  display: inline-block;
+  top: 15vh;
+  left: 40vw;
 }
