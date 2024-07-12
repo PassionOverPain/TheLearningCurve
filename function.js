@@ -67,17 +67,29 @@ function closeTab()
 {
     booking.style.display ='none';
 }
+let datePicker =document.getElementById("datePicker");
 function openTab()
 {
     booking.style.display ='grid';
-}
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    let month = currentDate.getMonth() + 1;
+    let day = currentDate.getDate();
+
+    month = month < 10 ? "0" + month : month;
+    day = day < 10 ? "0" + day : day;
+
+    datePicker.min = `${year}-${month}-${day}`;
+} 
+function submit()
+{
+
 const Namebox = document.getElementById("Name");
 const Surnamebox = document.getElementById("Surname");
 const Emailbox = document.getElementById("Email");
 const Gradebox = document.getElementById("Grade");
-const letters = /^[a-zA-Z]*$/; 
-function submit()
-{
+const letters = /^[a-zA-Z]*$/;
+
 
     let Name = Namebox.value;
     let Surname = Surnamebox.value;
@@ -132,10 +144,12 @@ function submit()
     }
     else
     {
+    
+
         const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
         const datePicker = document.getElementById('datePicker');
-        date = datePicker.getDate();
-        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team ${br}, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for programming that will start. Please feel free to respond to this message at ${Email}`);
+        date = datePicker.value;
+        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team ${br}, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for programming that will start ${date}. Please feel free to respond to this message at ${Email}`);
         window.alert(`Thnak you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`);
         const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
         window.open(link,`_blank`);
