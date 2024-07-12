@@ -163,6 +163,7 @@ video
     position: absolute;
     height: fit-content;
 }
+
 #backbtn
 {
     position: absolute;
@@ -183,7 +184,7 @@ input
     background-image: linear-gradient(to right,purple,blue);
     border-radius: 15px;
     border: none;
-    margin-bottom: 15px;
+    margin: 15px;
     display: inline;
     padding: 5px;
     text-align: center;

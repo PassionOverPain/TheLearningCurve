@@ -144,12 +144,14 @@ const letters = /^[a-zA-Z]*$/;
     }
     else
     {
-        book();
+        book(Name,Surname,Grade,Email);
     }
 }
-function book()
+function book(Name,Surname,Grade,Email)
 {
     const words = document.getElementsByName("Subject");
+    const plans = document.getElementsByName("Pricing")
+    let tutPlan = "";
     let subjects ="";
     let countsub = 0;
     words.forEach(subject => 
@@ -160,6 +162,13 @@ function book()
             ++countsub;
         }   
     });
+    plans.forEach(plan => 
+    {
+        if(plan.checked)
+        {
+            tutPlan = plan.title;
+        } 
+    });
     if (countsub===0)
         {
             window.alert(`Please select a subject to be tutored in before proceeding.`)
@@ -168,7 +177,7 @@ function book()
     {
     const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
     date = datePicker.value;
-    const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. Please feel free to respond to this message at ${Email}`);
+    const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. i have  also selected a ${tutPlan} for my learning period. Please feel free to respond to this message at ${Email}`);
     window.alert(`Thnak you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`);
     const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
     window.open(link,`_blank`);
