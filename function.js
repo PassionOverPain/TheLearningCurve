@@ -161,7 +161,7 @@ const mobileNav = document.getElementById("mobileNav");
 const meNu = document.getElementById("meNu");
 function navbar() {
   if (!seen) {
-    mobileNav.style.backgroundColor = "blue";
+    mobileNav.style.backgroundColor = "rgb(3, 2, 92)";
     meNu.style.display = "flex";
     seen = true;
   } else {
