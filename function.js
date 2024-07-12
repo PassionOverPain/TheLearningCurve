@@ -156,3 +156,17 @@ function book(Name, Surname, Grade, Email) {
     }
   }
 }
+let seen = false;
+const mobileNav = document.getElementById("mobileNav");
+const meNu = document.getElementById("meNu");
+function navbar() {
+  if (!seen) {
+    mobileNav.style.backgroundColor = "blue";
+    meNu.style.display = "flex";
+    seen = true;
+  } else {
+    mobileNav.style.backgroundColor = "transparent";
+    meNu.style.display = "none";
+    seen = false;
+  }
+}

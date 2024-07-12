@@ -451,14 +451,14 @@ footer {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  width: 100%;
+  width: fit-content;
 }
 #mobileNav ion-icon {
   display: inline-block;
   font-size: var(--bottompad);
 }
 #meNu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   text-align: center;
