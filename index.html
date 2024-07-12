@@ -90,82 +90,88 @@
               name="close-circle-outline"
               id="backbtn"
               onclick="closeTab()"></ion-icon>
-            <div id="topBook">
-              <input
-                type="text"
-                placeholder="Name:"
-                id="Name"
-                autocomplete="name" />
-              <input
-                type="text"
-                placeholder="Surname"
-                id="Surname"
-                autocomplete="additional-name" />
-              <input
-                type="number"
-                name=""
-                id="Grade"
-                placeholder="Grade"
-                min="8"
-                max="12"
-                autocomplete="off"
-                required />
-              <input
-                type="email"
-                name=""
-                id="Email"
-                placeholder="Email"
-                autocomplete="email"
-                required />
-            </div>
-            <div id="bottomBook">
-              <label for="Accounting">Accounting</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Accounting"
-                id="Accounting" />
-              <label for="Business">Business</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Business"
-                id="Business" />
-              <label for="English">English</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="English"
-                id="English" />
-              <label for="Math">Math</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Mathematics"
-                id="Math" />
-              <fieldset>
-                <label for="datePicker"
-                  >Pick a preferred date to begin your lessons: <br />
-                  <input type="date" name="" id="datePicker" />
-                </label>
-              </fieldset>
-              <label for="Basic">Basic Plan</label>
-              <input
-                type="radio"
-                name="Pricing"
-                id="Basic"
-                title="Basic"
-                checked />
-              <label for="Standard">Standard Plan</label>
-              <input
-                type="radio"
-                name="Pricing"
-                id="Standard"
-                title="Standard" />
-              <label for="Premium">Premium Plan</label>
-              <input type="radio" name="Pricing" id="Premium" title="Premium" />
-            </div>
-            <h5 class="book" id="bookbtn" onclick="submit()">Book</h5>
+            <form>
+              <div id="topBook">
+                <input
+                  type="text"
+                  placeholder="Name:"
+                  id="Name"
+                  autocomplete="name" />
+                <input
+                  type="text"
+                  placeholder="Surname"
+                  id="Surname"
+                  autocomplete="additional-name" />
+                <input
+                  type="number"
+                  name="Grade"
+                  id="Grade"
+                  placeholder="Grade"
+                  min="8"
+                  max="12"
+                  autocomplete="off"
+                  required />
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required />
+              </div>
+              <div id="bottomBook">
+                <label for="Accounting">Accounting</label>
+                <input
+                  type="checkbox"
+                  name="Subject"
+                  title="Accounting"
+                  id="Accounting" />
+                <label for="Business">Business</label>
+                <input
+                  type="checkbox"
+                  name="Subject"
+                  title="Business"
+                  id="Business" />
+                <label for="English">English</label>
+                <input
+                  type="checkbox"
+                  name="Subject"
+                  title="English"
+                  id="English" />
+                <label for="Math">Math</label>
+                <input
+                  type="checkbox"
+                  name="Subject"
+                  title="Mathematics"
+                  id="Math" />
+                <fieldset>
+                  <label for="datePicker"
+                    >Pick a preferred date to begin your lessons: <br />
+                    <input type="date" name="" id="datePicker" />
+                  </label>
+                </fieldset>
+                <label for="Basic">Basic Plan</label>
+                <input
+                  type="radio"
+                  name="Pricing"
+                  id="Basic"
+                  title="Basic"
+                  checked />
+                <label for="Standard">Standard Plan</label>
+                <input
+                  type="radio"
+                  name="Pricing"
+                  id="Standard"
+                  title="Standard" />
+                <label for="Premium">Premium Plan</label>
+                <input
+                  type="radio"
+                  name="Pricing"
+                  id="Premium"
+                  title="Premium" />
+              </div>
+              <button type="submit" class="book" id="bookbtn">Book</button>
+            </form>
           </div>
         </div>
         <div id="RightContent">
