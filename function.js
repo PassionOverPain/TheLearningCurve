@@ -133,8 +133,10 @@ function submit()
     else
     {
         const encodedSubject = encodeURIComponent('Requesting Tutoring Class');
-        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to bok tutoring classes for programming. Please feel free to respond to this message at ${Email}}`);
-        window.alert(`Thnak you for reaching out to us ${Name}. We wilutoring Classl be in touch with you at ${Email} shortly`);
+        const datePicker = document.getElementById('datePicker');
+        date = datePicker.getDate();
+        const encodedBody = encodeURIComponent(`Good Day The Learning Curve Team ${br}, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for programming that will start. Please feel free to respond to this message at ${Email}`);
+        window.alert(`Thnak you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`);
         const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
         window.open(link,`_blank`);
     }
