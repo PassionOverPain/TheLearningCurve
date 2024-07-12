@@ -443,6 +443,15 @@ footer {
   top: 15vh;
   left: 40vw;
 }
+/* ===========================================Mobile Dev=================================================================== */
+#mobileNav {
+  position: fixed;
+  background-color: red;
+  z-index: 100;
+}
+#mobileNav ion-icon {
+  font-size: var(--bottompad);
+}
 @media only screen and (max-width: 850px) {
   * {
     --smallfont: 0.5rem;
@@ -454,6 +463,16 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  #words1,
+  #words2 {
+    display: none;
+  }
+  #rights {
+    display: none;
+  }
   #Pricing {
     display: grid;
   }
