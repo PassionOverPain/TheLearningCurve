@@ -446,8 +446,10 @@ footer {
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
   position: fixed;
-  background-color: red;
+  background-color: rgb(3, 2, 92);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 100;
   width: 100%;
 }
@@ -457,8 +459,15 @@ footer {
 }
 #meNu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+}
+ul li {
+  font-size: var(--mainfont);
+  margin-left: 20px;
+  margin-right: 2px;
+  font-weight: bold;
 }
 ul a {
   text-decoration: none;
