@@ -19,9 +19,13 @@ body {
   align-items: center;
   font-family: sans-serif;
 }
+#brand {
+  min-width: 27vw;
+  height: fit-content;
+}
 #brandName {
   line-height: 55px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 nav {
   position: fixed;
@@ -137,7 +141,7 @@ video {
 #booking {
   z-index: 100;
   cursor: default;
-  display: grid;
+  display: none;
   gap: 20px;
   justify-content: center;
   text-align: center;
@@ -154,6 +158,9 @@ video {
   right: -100;
   font-size: 40px;
   cursor: pointer;
+}
+#backbtn:hover {
+  transform: scale(1.1);
 }
 #bookbtn {
   left: 0;
@@ -175,7 +182,7 @@ fieldset {
   border: none;
 }
 label {
-  font-size: 1.2rem;
+  font-size: 100%;
 }
 #socialIcons {
   position: relative;
@@ -223,7 +230,6 @@ section {
 #About {
   height: fit-content;
   position: relative;
-  bottom: -50px;
   display: grid;
   justify-content: center;
   align-items: start;
@@ -330,8 +336,8 @@ section {
   -webkit-backdrop-filter: blur(50px);
   border-top: 1px solid rgba(255, 250, 255, 0.137);
   border-left: 1px solid rgba(255, 250, 255, 0.137);
-  margin-bottom: 15vh;
   width: 95vw;
+  height: fit-content;
 }
 #Subjects {
   width: fit-content;
