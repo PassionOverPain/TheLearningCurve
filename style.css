@@ -399,8 +399,8 @@ section {
   background-color: rgba(4, 2, 92, 0.253);
   backdrop-filter: blur(10px);
   padding: 25px;
-  height: fit-content;
   width: fit-content;
+  height: fit-content;
 }
 #Business {
   line-height: 4vh;
@@ -451,5 +451,10 @@ footer {
     --XLfont: 2rem;
     --bottompad: 50px;
     --toppad: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Pricing {
+    display: grid;
   }
 }
