@@ -140,14 +140,19 @@ function book(Name, Surname, Grade, Email) {
   } else {
     const encodedSubject = encodeURIComponent("Requesting Tutoring Class");
     date = datePicker.value;
-    const encodedBody = encodeURIComponent(
-      `Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. I have  also selected a ${tutPlan} plan for my learning period. Please feel free to respond to this message at ${Email}`
-    );
-    window.alert(
-      `Thank you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`
-    );
-    const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
-    window.open(link, `_blank`);
-    countsub = 0;
+    if (date == "") {
+      window.alert(`Please select a date before proceeding.`);
+      datePicker.focus;
+    } else {
+      const encodedBody = encodeURIComponent(
+        `Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. I have  also selected a ${tutPlan} plan for my learning period. Please feel free to respond to this message at ${Email}`
+      );
+      window.alert(
+        `Thank you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`
+      );
+      const link = `mailto:tinomhedziso@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+      window.open(link, `_blank`);
+      countsub = 0;
+    }
   }
 }
