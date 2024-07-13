@@ -414,17 +414,35 @@ section {
   line-height: 4vh;
 }
 #learningMode {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: linear-gradient(to right, blue, purple);
+}
+#locations {
+  text-align: center;
+  display: block;
+}
+#locations label {
+  font-size: var(--mainfont);
+}
+iframe {
+  width: 90%;
+  height: 250px;
 }
 #thirdVideo {
   margin-top: 2%;
   border-radius: 20%;
   position: relative;
   width: 400px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
 }
 #Pricing {
   display: flex;
@@ -541,5 +559,8 @@ ul a {
   }
   #socialIcons {
     right: 0px;
+  }
+  #learning {
+    display: grid;
   }
 }

@@ -185,3 +185,38 @@ function navbar() {
     seen = false;
   }
 }
+function locateMap(locNum) {
+  const locMap = document.getElementById("locMap");
+  switch (locNum) {
+    case 0: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28685.67426872483!2d28.002415000000003!3d-26.010338999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576c722b531c1%3A0xb1d029298fe1d9f5!2sFourways%2C%20Sandton%2C%202055!5e0!3m2!1sen!2sza!4v1720879969407!5m2!1sen!2sza";
+      break;
+    }
+    case 1: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114764.00079324677!2d28.011702857850484!3d-25.98852969743157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571fd4965198b%3A0x87b2105c1c8bfe22!2sMidrand!5e0!3m2!1sen!2sza!4v1720884116197!5m2!1sen!2sza";
+      break;
+    }
+    case 2: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229283.3610694351!2d27.797454077744217!3d-26.113522195533275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574b0839fe795%3A0x4443ba51b0acaf0d!2sRandburg!5e0!3m2!1sen!2sza!4v1720884990314!5m2!1sen!2sza";
+      break;
+    }
+    case 3: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14330.251686882351!2d27.960673138255967!3d-26.11318271656279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9575278c2eeae7%3A0x242e9fadddc029b3!2sRandpark%2C%20Randburg%2C%202194!5e0!3m2!1sen!2sza!4v1720885072494!5m2!1sen!2sza";
+      break;
+    }
+    case 4: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229390.56565694802!2d27.762261441337674!3d-26.058817532756738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957398cbf40517%3A0xdf8bd21bf1eb74c!2sSandton!5e0!3m2!1sen!2sza!4v1720885147509!5m2!1sen!2sza";
+      break;
+    }
+    case 5: {
+      locMap.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28680.905344798386!2d28.054980767908635!3d-26.029852976918672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572373ec0a289%3A0x60a0818ef23151e6!2sSunninghill%2C%20Sandton!5e0!3m2!1sen!2sza!4v1720885294672!5m2!1sen!2sza";
+      break;
+    }
+  }
+}
