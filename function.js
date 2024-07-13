@@ -132,9 +132,9 @@ function submitthis(send) {
         tutPlan = plan.title;
       }
     });
-    if (countsub === 0) {
-      window.alert(
-        `Please select a subject to be tutored in before proceeding.`
+    if (countsub < 2) {
+      alert(
+        `Please select 2 subjects or more to be tutored in before proceeding.`
       );
     } else {
       date = datePicker.value;
