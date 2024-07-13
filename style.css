@@ -18,7 +18,7 @@ html {
 header {
   position: relative;
   height: fit-content;
-  background-image: linear-gradient(to right, black, blue);
+  background-image: linear-gradient(to right, purple, blue);
 }
 body {
   min-height: fit-content;
@@ -418,6 +418,7 @@ footer {
   height: 25vh;
   background-color: rgb(3, 2, 92);
   position: relative;
+  font-size: var(--mainfont);
 }
 #leftfoot {
   display: flex;
@@ -463,11 +464,12 @@ footer {
   align-items: center;
   text-align: center;
 }
-ul li {
+.menuItem {
   font-size: var(--mainfont);
   margin-left: 20px;
   margin-right: 2px;
   font-weight: bold;
+  color: red;
 }
 ul a {
   text-decoration: none;
