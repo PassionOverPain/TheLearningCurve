@@ -430,6 +430,9 @@ footer {
   height: 25vh;
   color: white;
 }
+#leftfoot ul a {
+  color: #ffff;
+}
 #rightfoot {
   display: flex;
   justify-content: center;
@@ -442,8 +445,9 @@ footer {
 #rights {
   position: absolute;
   display: inline-block;
-  top: 15vh;
-  left: 40vw;
+  top: 68%;
+  left: 35%;
+  font-size: var(--mainfont);
 }
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
