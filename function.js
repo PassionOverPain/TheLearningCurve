@@ -166,9 +166,11 @@ function book(Name, Surname, Grade, Email) {
 }
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
+  document.getElementById("booking").style.left = "0";
 }
 function hideLoc() {
   document.getElementById("place").style.display = "none";
+  document.getElementById("booking").style.left = "20%";
 }
 
 let seen = false;
