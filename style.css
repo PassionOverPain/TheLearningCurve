@@ -61,7 +61,7 @@ nav ul li a:hover {
   text-decoration: none;
   line-height: 50px;
   margin-right: 5px;
-  color: #000;
+  color: #ffff;
 }
 .navigation a ion-icon {
   position: relative;
@@ -464,12 +464,11 @@ footer {
   align-items: center;
   text-align: center;
 }
-.menuItem {
+#meNu li {
   font-size: var(--mainfont);
   margin-left: 20px;
   margin-right: 2px;
   font-weight: bold;
-  color: red;
 }
 ul a {
   text-decoration: none;
