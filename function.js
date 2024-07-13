@@ -3,6 +3,7 @@
 let title = document.getElementById("title");
 let desc = document.getElementById("desc");
 let Mode = "Online";
+let send = false;
 let subNum = 0;
 function increaseNum() {
   if (subNum == 3) {
@@ -76,7 +77,7 @@ function openTab() {
   datePicker.min = `${year}-${month}-${day}`;
   datePicker.max = `${year}-12-30`;
 }
-function submitthis(send) {
+function submitthis() {
   const Namebox = document.getElementById("Name");
   const Surnamebox = document.getElementById("Surname");
   const Emailbox = document.getElementById("Email");
@@ -172,6 +173,7 @@ function submitthis(send) {
   if (send) {
     book(Name, Surname, Grade, subjects, date, tutPlan, Email);
   } else {
+    alert(`So you are calc, Mode is ${Mode} and subs is ${countsub}`);
     return countsub;
   }
 }
@@ -193,7 +195,8 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
   });
 }
 function calcTotal() {
-  subs = submitthis(false);
+  send = false;
+  subs = submitthis();
   total = document.getElementById("total");
   {
     if (Mode == "Online") {
