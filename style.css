@@ -420,6 +420,12 @@ section {
   text-align: center;
   background-image: linear-gradient(to right, blue, purple);
 }
+#thirdVideo {
+  margin-top: 2%;
+  border-radius: 20%;
+  position: relative;
+  width: 400px;
+}
 #Pricing {
   display: flex;
   justify-content: center;
