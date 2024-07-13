@@ -18,7 +18,7 @@ html {
 header {
   position: relative;
   height: fit-content;
-  background-image: linear-gradient(to right, purple, blue);
+  background-image: linear-gradient(to right, black, blue);
 }
 body {
   min-height: fit-content;
