@@ -194,8 +194,24 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
 }
 function calcTotal() {
   subs = submitthis(false);
+  total = document.getElementById("total");
   {
-    if (b) {
+    if (Mode == "Online") {
+      if ((subs = 2)) {
+        total.textContent = "Your monthly total plan is R500.";
+      } else if ((subs = 3)) {
+        total.textContent = "Your monthly total plan is R700.";
+      } else {
+        total.textContent = "Your monthly total plan is R1000.";
+      }
+    } else if (Mode == "Physical") {
+      if ((subs = 2)) {
+        total.textContent = "Your monthly total plan is R700.";
+      } else if ((subs = 3)) {
+        total.textContent = "Your monthly total plan is R1000.";
+      } else {
+        total.textContent = "Your monthly total plan is R1300.";
+      }
     }
   }
 }
