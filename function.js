@@ -75,7 +75,7 @@ function openTab() {
   datePicker.min = `${year}-${month}-${day}`;
   datePicker.max = `${year}-12-30`;
 }
-function submitthis() {
+function submitthis(send) {
   const Namebox = document.getElementById("Name");
   const Surnamebox = document.getElementById("Surname");
   const Emailbox = document.getElementById("Email");
@@ -143,7 +143,9 @@ function submitthis() {
         datePicker.focus;
       }
     }
-    book(Name, Surname, Grade, subjects, date, tutPlan, Email); // Put The Code HERE
+    if (send) {
+      book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+    }
   }
 }
 function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
