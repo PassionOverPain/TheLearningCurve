@@ -192,6 +192,7 @@ label {
   font-size: var(--bigfont);
 }
 h4 {
+  margin-bottom: 2%;
   font-size: var(--bigfont);
 }
 #socialIcons {
@@ -411,6 +412,13 @@ section {
 }
 #Business {
   line-height: 4vh;
+}
+#learningMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, purple);
 }
 #Pricing {
   display: flex;
