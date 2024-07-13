@@ -176,6 +176,11 @@ nav img {
   margin-top: 10px;
   width: 10vw;
 }
+#pricingbtn {
+  padding: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
 #place {
   display: none;
 }
