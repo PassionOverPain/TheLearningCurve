@@ -6,6 +6,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "6zLLbMnvqZpCSp3aZ",
+        });
+      })();
+    </script>
     <title>The Learning Curve</title>
   </head>
   <body>
@@ -71,17 +81,30 @@
           </div>
           <h5 id="book" class="book" onclick="openTab()">Book Class</h5>
           <div id="socialIcons">
-            <a href="https://www.facebook.com/" class="up"
+            <a
+              href="https://www.facebook.com/TheLearningCurvetm?_rdc=1&_rdr"
+              class="up"
+              target="_blank"
               ><ion-icon name="logo-facebook"></ion-icon
             ></a>
-            <a href="https://www.linkedin/in/" class="down"
+            <a
+              href="https://www.linkedin.com/in/lance-kupeta-19aa65105/"
+              class="down"
+              target="_blank"
               ><ion-icon name="logo-linkedin"></ion-icon
             ></a>
-            <a href="" class="up"><ion-icon name="call-outline"></ion-icon></a>
+            <a
+              href="https://wa.me/27699498692?text=Good%20Day%20I%20would%20like%20to%20inquire%20%20about%20your%20tutoring%20service."
+              class="up"
+              ><ion-icon name="call-outline"></ion-icon
+            ></a>
             <a href="" class="down"
               ><ion-icon name="logo-whatsapp"></ion-icon
             ></a>
-            <a href="mailto:tinomhedziso21@gmail.com" class="up"
+            <a
+              href="mailto:thelearningcurvetm@gmail.com"
+              class="up"
+              target="_blank"
               ><ion-icon name="mail-outline"></ion-icon
             ></a>
           </div>
@@ -90,88 +113,84 @@
               name="close-circle-outline"
               id="backbtn"
               onclick="closeTab()"></ion-icon>
-            <form>
-              <div id="topBook">
-                <input
-                  type="text"
-                  placeholder="Name:"
-                  id="Name"
-                  autocomplete="name" />
-                <input
-                  type="text"
-                  placeholder="Surname"
-                  id="Surname"
-                  autocomplete="additional-name" />
-                <input
-                  type="number"
-                  name="Grade"
-                  id="Grade"
-                  placeholder="Grade"
-                  min="8"
-                  max="12"
-                  autocomplete="off"
-                  required />
-                <input
-                  type="email"
-                  name="Email"
-                  id="Email"
-                  placeholder="Email"
-                  autocomplete="email"
-                  required />
-              </div>
-              <div id="bottomBook">
-                <label for="Accounting">Accounting</label>
-                <input
-                  type="checkbox"
-                  name="Subject"
-                  title="Accounting"
-                  id="Accounting" />
-                <label for="Business">Business</label>
-                <input
-                  type="checkbox"
-                  name="Subject"
-                  title="Business"
-                  id="Business" />
-                <label for="English">English</label>
-                <input
-                  type="checkbox"
-                  name="Subject"
-                  title="English"
-                  id="English" />
-                <label for="Math">Math</label>
-                <input
-                  type="checkbox"
-                  name="Subject"
-                  title="Mathematics"
-                  id="Math" />
-                <fieldset>
-                  <label for="datePicker"
-                    >Pick a preferred date to begin your lessons: <br />
-                    <input type="date" name="" id="datePicker" />
-                  </label>
-                </fieldset>
-                <label for="Basic">Basic Plan</label>
-                <input
-                  type="radio"
-                  name="Pricing"
-                  id="Basic"
-                  title="Basic"
-                  checked />
-                <label for="Standard">Standard Plan</label>
-                <input
-                  type="radio"
-                  name="Pricing"
-                  id="Standard"
-                  title="Standard" />
-                <label for="Premium">Premium Plan</label>
-                <input
-                  type="radio"
-                  name="Pricing"
-                  id="Premium"
-                  title="Premium" />
-              </div>
-              <button type="submit" class="book" id="bookbtn">Book</button>
-            </form>
+            <div id="topBook">
+              <input
+                type="text"
+                placeholder="Name:"
+                id="Name"
+                autocomplete="name" />
+              <input
+                type="text"
+                placeholder="Surname"
+                id="Surname"
+                autocomplete="additional-name" />
+              <input
+                type="number"
+                name="Grade"
+                id="Grade"
+                placeholder="Grade"
+                min="8"
+                max="12"
+                autocomplete="off"
+                required />
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Email"
+                autocomplete="email"
+                required />
+            </div>
+            <div id="bottomBook">
+              <label for="Accounting">Accounting</label>
+              <input
+                type="checkbox"
+                name="Subject"
+                title="Accounting"
+                id="Accounting" />
+              <label for="Business">Business</label>
+              <input
+                type="checkbox"
+                name="Subject"
+                title="Business"
+                id="Business" />
+              <label for="English">English</label>
+              <input
+                type="checkbox"
+                name="Subject"
+                title="English"
+                id="English" />
+              <label for="Math">Math</label>
+              <input
+                type="checkbox"
+                name="Subject"
+                title="Mathematics"
+                id="Math" />
+              <fieldset>
+                <label for="datePicker"
+                  >Pick a preferred date to begin your lessons: <br />
+                  <input type="date" name="" id="datePicker" />
+                </label>
+              </fieldset>
+              <label for="Basic">Basic Plan</label>
+              <input
+                type="radio"
+                name="Pricing"
+                id="Basic"
+                title="Basic"
+                checked />
+              <label for="Standard">Standard Plan</label>
+              <input
+                type="radio"
+                name="Pricing"
+                id="Standard"
+                title="Standard" />
+              <label for="Premium">Premium Plan</label>
+              <input type="radio" name="Pricing" id="Premium" title="Premium" />
+            </div>
+            <button onclick="submitthis()" class="book" id="bookbtn">
+              Book
+            </button>
           </div>
         </div>
         <div id="RightContent">

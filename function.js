@@ -74,7 +74,7 @@ function openTab() {
 
   datePicker.min = `${year}-${month}-${day}`;
 }
-function submit() {
+function submitthis() {
   const Namebox = document.getElementById("Name");
   const Surnamebox = document.getElementById("Surname");
   const Emailbox = document.getElementById("Email");
@@ -144,24 +144,29 @@ function book(Name, Surname, Grade, Email) {
       window.alert(`Please select a date before proceeding.`);
       datePicker.focus;
     } else {
-      const form = document.querySelector("form");
-
-      // action="https://formspree.io/f/mrbzbpop" method="POST"
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-
-        for (item of formData) {
-          console.log(item[0], item[1]);
-        }
-      });
-      const encodedBody = encodeURIComponent(
-        `Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. I have  also selected a ${tutPlan} plan for my learning period. Please feel free to respond to this message at ${Email}`
-      );
-      window.alert(
-        `Thank you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`
-      );
-      window.open(link, `_blank`);
+      let params = {
+        LName: Name,
+        LSurname: Surname,
+        LGrade: Grade,
+        LSubjects: subjects,
+        LDate: date,
+        LTutPlan: tutPlan,
+        LEmail: Email,
+      };
+      emailjs
+        .send("service_xkt6yfv", "template_rwuuzvm", params)
+        .then(function (res) {
+          alert(
+            "Your Message has been successfully sent. We will be in touch with you shortly ~ The Learning Curve Team."
+          );
+        });
+      // const encodedBody = encodeURIComponent(
+      //   `Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. I have  also selected a ${tutPlan} plan for my learning period. Please feel free to respond to this message at ${Email}`
+      // );
+      // window.alert(
+      //   `Thank you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`
+      // );
+      // window.open(link, `_blank`);
       countsub = 0;
     }
   }
