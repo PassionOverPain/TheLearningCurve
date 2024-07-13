@@ -127,25 +127,55 @@ function submitthis(send) {
         ++countsub;
       }
     });
-    plans.forEach((plan) => {
-      if (plan.checked) {
-        tutPlan = plan.title;
+    switch (countsub) {
+      case 0: {
+        alert(
+          `Please select 2 subjects or more to be tutored in before proceeding.`
+        );
+        break;
       }
-    });
-    if (countsub < 2) {
-      alert(
-        `Please select 2 subjects or more to be tutored in before proceeding.`
-      );
-    } else {
-      date = datePicker.value;
-      if (date == "") {
-        window.alert(`Please select a date before proceeding.`);
-        datePicker.focus;
+      case 1: {
+        alert(
+          `Please select 2 subjects or more to be tutored in before proceeding.`
+        );
+        break;
+      }
+
+      case 2: {
+        tutPlan = "Basic";
+        break;
+      }
+
+      case 3: {
+        tutPlan = "Standard";
+        break;
+      }
+
+      case 4: {
+        tutPlan = "Premium";
+        break;
+      }
+      default: {
+        alert(
+          "We are currently only offerinbg classes in 4 subjects. Please select 4 subjects for our Premum plan."
+        );
+        break;
       }
     }
-    if (send) {
-      book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+    date = datePicker.value;
+    if (date == "") {
+      window.alert(`Please select a date before proceeding.`);
+      datePicker.focus;
     }
+  }
+  if (send) {
+    book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+  } else {
+    thing = {
+      tutPlan,
+      countsub,
+    };
+    return thing;
   }
 }
 function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
@@ -157,6 +187,7 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
     LDate: date,
     LTutPlan: tutPlan,
     LEmail: Email,
+    LMode: Mode,
   };
   emailjs.send("service_xkt6yfv", "template_rwuuzvm", params).then(function () {
     alert(
@@ -164,13 +195,22 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
     );
   });
 }
+function calcTotal() {
+  b = submitthis(false);
+  {
+    if (b) {
+    }
+  }
+}
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
   document.getElementById("booking").style.left = "0";
+  Mode = "Physical";
 }
 function hideLoc() {
   document.getElementById("place").style.display = "none";
   document.getElementById("booking").style.left = "20%";
+  Mode = "Online";
 }
 
 let seen = false;

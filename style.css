@@ -181,7 +181,7 @@ nav img {
   padding-right: 25px;
   padding-left: 25px;
 }
-#plans {
+.plans {
   display: flex;
   justify-content: space-evenly;
   font-size: var(--bigfont);
