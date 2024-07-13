@@ -73,6 +73,7 @@ function openTab() {
   day = day < 10 ? "0" + day : day;
 
   datePicker.min = `${year}-${month}-${day}`;
+  datePicker.max = `${year}-12-30`;
 }
 function submitthis() {
   const Namebox = document.getElementById("Name");
