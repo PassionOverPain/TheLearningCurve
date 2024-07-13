@@ -2,6 +2,7 @@
 
 let title = document.getElementById("title");
 let desc = document.getElementById("desc");
+let Mode = "Online";
 let subNum = 0;
 function increaseNum() {
   if (subNum == 3) {
@@ -171,11 +172,7 @@ function submitthis(send) {
   if (send) {
     book(Name, Surname, Grade, subjects, date, tutPlan, Email);
   } else {
-    thing = {
-      tutPlan,
-      countsub,
-    };
-    return thing;
+    return countsub;
   }
 }
 function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
@@ -196,7 +193,7 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
   });
 }
 function calcTotal() {
-  b = submitthis(false);
+  subs = submitthis(false);
   {
     if (b) {
     }
