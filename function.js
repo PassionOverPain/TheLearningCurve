@@ -155,7 +155,7 @@ function book(Name, Surname, Grade, Email) {
       };
       emailjs
         .send("service_xkt6yfv", "template_rwuuzvm", params)
-        .then(function (res) {
+        .then(function () {
           alert(
             "Your Message has been successfully sent. We will be in touch with you shortly ~ The Learning Curve Team."
           );
