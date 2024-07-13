@@ -92,7 +92,7 @@ nav img {
   position: relative;
   overflow: hidden;
 }
-video {
+#firstVideo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -377,6 +377,12 @@ section {
   align-items: center;
   text-align: center;
   background-image: linear-gradient(to right, blue, purple);
+}
+#secondVideo {
+  border-radius: 20%;
+  position: relative;
+  float: inline-start;
+  width: 100px;
 }
 #Card {
   margin: 10px;
