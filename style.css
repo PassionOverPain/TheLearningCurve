@@ -424,8 +424,8 @@ footer {
 #leftfoot {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   width: 25vw;
   height: 25vh;
   color: white;
@@ -436,8 +436,8 @@ footer {
 #rightfoot {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   width: 25vw;
   height: 25vh;
   color: white;
@@ -445,7 +445,7 @@ footer {
 #rights {
   position: absolute;
   display: inline-block;
-  top: 68%;
+  top: 82%;
   left: 35%;
   font-size: var(--mainfont);
 }
