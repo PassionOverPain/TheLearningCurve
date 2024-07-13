@@ -163,13 +163,12 @@ function book(Name, Surname, Grade, Email) {
     }
   }
 }
-document.getElementById("Physical").addEventListener("change", () => {
-  if (this.checked) {
-    document.getElementById("place").style.display = "inline-block";
-  } else {
-    document.getElementById("place").style.display = "none";
-  }
-});
+function showLoc() {
+  document.getElementById("place").style.display = "inline-block";
+}
+function hideLoc() {
+  document.getElementById("place").style.display = "none";
+}
 
 let seen = false;
 const mobileNav = document.getElementById("mobileNav");
