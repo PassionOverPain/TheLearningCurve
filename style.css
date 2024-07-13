@@ -419,6 +419,16 @@ section {
   text-align: center;
   background-image: linear-gradient(to right, purple, blue);
 }
+#Other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, purple);
+}
+#otherServices {
+  text-align: start;
+}
 footer {
   display: flex;
   justify-content: space-evenly;
