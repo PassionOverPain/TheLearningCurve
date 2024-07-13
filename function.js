@@ -114,55 +114,53 @@ function submitthis() {
     window.alert("The Email you have entered is Invalid.");
     Emailbox.focus();
   } else {
-    book(Name, Surname, Grade, Email);
+    const words = document.getElementsByName("Subject");
+    const plans = document.getElementsByName("Pricing");
+    let tutPlan = "";
+    let subjects = "";
+    let countsub = 0;
+    words.forEach((subject) => {
+      if (subject.checked) {
+        countsub === 0
+          ? (subjects += subject.title)
+          : (subjects += ", " + subject.title);
+        ++countsub;
+      }
+    });
+    plans.forEach((plan) => {
+      if (plan.checked) {
+        tutPlan = plan.title;
+      }
+    });
+    if (countsub === 0) {
+      window.alert(
+        `Please select a subject to be tutored in before proceeding.`
+      );
+    } else {
+      date = datePicker.value;
+      if (date == "") {
+        window.alert(`Please select a date before proceeding.`);
+        datePicker.focus;
+      }
+    }
+    book(Name, Surname, Grade, subjects, date, tutPlan, Email); // Put The Code HERE
   }
 }
-function book(Name, Surname, Grade, Email) {
-  const words = document.getElementsByName("Subject");
-  const plans = document.getElementsByName("Pricing");
-  let tutPlan = "";
-  let subjects = "";
-  let countsub = 0;
-  words.forEach((subject) => {
-    if (subject.checked) {
-      countsub === 0
-        ? (subjects += subject.title)
-        : (subjects += ", " + subject.title);
-      ++countsub;
-    }
+function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
+  let params = {
+    LName: Name,
+    LSurname: Surname,
+    LGrade: Grade,
+    LSubjects: subjects,
+    LDate: date,
+    LTutPlan: tutPlan,
+    LEmail: Email,
+  };
+  emailjs.send("service_xkt6yfv", "template_rwuuzvm", params).then(function () {
+    alert(
+      "Your Message has been successfully sent. We will be in touch with you shortly ~ The Learning Curve Team."
+    );
   });
-  plans.forEach((plan) => {
-    if (plan.checked) {
-      tutPlan = plan.title;
-    }
-  });
-  if (countsub === 0) {
-    window.alert(`Please select a subject to be tutored in before proceeding.`);
-  } else {
-    date = datePicker.value;
-    if (date == "") {
-      window.alert(`Please select a date before proceeding.`);
-      datePicker.focus;
-    } else {
-      let params = {
-        LName: Name,
-        LSurname: Surname,
-        LGrade: Grade,
-        LSubjects: subjects,
-        LDate: date,
-        LTutPlan: tutPlan,
-        LEmail: Email,
-      };
-      emailjs
-        .send("service_xkt6yfv", "template_rwuuzvm", params)
-        .then(function () {
-          alert(
-            "Your Message has been successfully sent. We will be in touch with you shortly ~ The Learning Curve Team."
-          );
-        });
-      countsub = 0;
-    }
-  }
 }
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
