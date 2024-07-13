@@ -138,7 +138,6 @@ function book(Name, Surname, Grade, Email) {
   if (countsub === 0) {
     window.alert(`Please select a subject to be tutored in before proceeding.`);
   } else {
-    const encodedSubject = encodeURIComponent("Requesting Tutoring Class");
     date = datePicker.value;
     if (date == "") {
       window.alert(`Please select a date before proceeding.`);
@@ -160,13 +159,6 @@ function book(Name, Surname, Grade, Email) {
             "Your Message has been successfully sent. We will be in touch with you shortly ~ The Learning Curve Team."
           );
         });
-      // const encodedBody = encodeURIComponent(
-      //   `Good Day The Learning Curve Team, my name is ${Name} ${Surname}, a learner in grade ${Grade}. I would like to book tutoring classes for ${subjects} that will start ${date}. I have  also selected a ${tutPlan} plan for my learning period. Please feel free to respond to this message at ${Email}`
-      // );
-      // window.alert(
-      //   `Thank you for reaching out to us ${Name}. We will  be in touch with you at ${Email} shortly`
-      // );
-      // window.open(link, `_blank`);
       countsub = 0;
     }
   }
