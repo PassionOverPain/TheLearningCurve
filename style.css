@@ -153,7 +153,7 @@ nav img {
   justify-content: center;
   text-align: center;
   align-items: center;
-  top: 15vh;
+  top: 10%;
   width: fit-content;
   position: absolute;
   height: fit-content;
@@ -163,7 +163,7 @@ nav img {
   position: absolute;
   top: 0;
   right: -100;
-  font-size: var(--bigfont);
+  font-size: 300%;
   cursor: pointer;
 }
 #backbtn:hover {
