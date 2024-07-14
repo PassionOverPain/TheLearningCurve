@@ -18,7 +18,8 @@ html {
 header {
   position: relative;
   height: fit-content;
-  background-image: linear-gradient(to right, purple, blue);
+  background-image: linear-gradient(to right, black, blue);
+  color: white;
 }
 body {
   min-height: fit-content;
@@ -224,7 +225,7 @@ h4 {
 }
 #socialIcons a {
   display: inline-block;
-  color: black;
+  color: white;
   font-size: var(--bigfont);
 }
 #socialIcons a:hover {
