@@ -3,9 +3,8 @@
 let title = document.getElementById("title");
 let desc = document.getElementById("desc");
 let Mode = "Online";
-let send = false;
 let subNum = 0;
-let sTotal = "0";
+let sTotal = "";
 let sLocation = "";
 function increaseNum() {
   if (subNum == 3) {
@@ -79,7 +78,7 @@ function openTab() {
   datePicker.min = `${year}-${month}-${day}`;
   datePicker.max = `${year}-12-30`;
 }
-function submitthis() {
+function submitthis(send) {
   //=========================================Name/Surname Validation Starts ===============================//
   const Namebox = document.getElementById("Name");
   const Surnamebox = document.getElementById("Surname");
@@ -176,11 +175,12 @@ function submitthis() {
       window.alert(`Please select a date before proceeding.`);
       datePicker.focus;
     } else if (send) {
-      if (sTotal == "0") {
+      if (sTotal == "") {
         alert(
           `Please calculate your total before booking.This will be the plan registered on our system.`
         );
       } else {
+        alert("You have attempted to book.");
         book(Name, Surname, Grade, subjects, date, tutPlan, Email);
       }
     } else {
@@ -208,8 +208,7 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
   });
 }
 function calcTotal() {
-  send = false;
-  subs = submitthis();
+  subs = submitthis(false);
   total = document.getElementById("total");
   {
     if (Mode == "Online") {
