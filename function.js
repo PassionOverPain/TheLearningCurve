@@ -250,7 +250,9 @@ function calcTotal() {
         break;
       }
     }
-  total.style.display = "inline-block";
+  if (!subs == 0) {
+    total.style.display = "inline-block";
+  }
 }
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
