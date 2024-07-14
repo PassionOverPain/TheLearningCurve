@@ -129,7 +129,7 @@ nav img {
   left: 3vw;
   background-color: transparent;
   padding: 12px;
-  border: solid #000 1px;
+  border: solid #ffff 1px;
   animation-name: slideleft;
   animation-duration: 2s;
   animation-delay: 0;
@@ -229,6 +229,7 @@ h4 {
   font-size: var(--bigfont);
 }
 #socialIcons a:hover {
+  color: purple;
   animation-play-state: paused;
 }
 .up {
@@ -266,7 +267,7 @@ section {
   justify-content: center;
   align-items: start;
   text-align: center;
-  background-image: linear-gradient(to right, purple, blue);
+  background-image: linear-gradient(to right, black, blue);
 }
 #words1 {
   position: absolute;
@@ -373,6 +374,7 @@ section {
   height: fit-content;
   margin-top: var(--toppad);
   margin-bottom: var(--bottompad);
+  color: #ffff;
 }
 #Subjects {
   width: fit-content;
@@ -389,6 +391,7 @@ section {
 .arrow {
   font-size: var(--XLfont);
   cursor: pointer;
+  color: #000;
 }
 .arrow:hover {
   transform: scale(1.1);
@@ -398,7 +401,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, blue, purple);
+  background-image: linear-gradient(to right, blue, black);
 }
 #secondVideo {
   border-radius: 20%;
@@ -410,7 +413,7 @@ section {
   margin: 10px;
   width: fit-content;
   backdrop-filter: blur(0px);
-  background-color: rgba(92, 2, 73, 0.377);
+  background-color: rgba(4, 2, 92, 0.479);
 }
 #Tutor {
   margin-bottom: var(--bottompad);
@@ -425,11 +428,12 @@ section {
   display: inline-block;
   cursor: pointer;
   font-size: var(--mainfont);
-  background-color: rgba(4, 2, 92, 0.253);
+  background-color: rgba(128, 128, 128, 0.247);
   backdrop-filter: blur(10px);
   padding: 25px;
   width: fit-content;
   height: fit-content;
+  color: #ffff;
 }
 #Business {
   line-height: 4vh;
@@ -439,7 +443,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, blue, purple);
+  background-image: linear-gradient(to right, black, blue);
 }
 #locations {
   text-align: center;
@@ -470,14 +474,14 @@ iframe {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, purple, blue);
+  background-image: linear-gradient(to right, black, blue);
 }
 #Other {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, blue, purple);
+  background-image: linear-gradient(to right, blue, black);
 }
 #otherServices {
   text-align: start;
