@@ -168,13 +168,12 @@ function submitthis() {
     if (date == "") {
       window.alert(`Please select a date before proceeding.`);
       datePicker.focus;
+    } else if (send) {
+      book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+    } else {
+      alert(`So you are calc, Mode is ${Mode} and subs is ${countsub}`);
+      return countsub;
     }
-  }
-  if (send) {
-    book(Name, Surname, Grade, subjects, date, tutPlan, Email);
-  } else {
-    alert(`So you are calc, Mode is ${Mode} and subs is ${countsub}`);
-    return countsub;
   }
 }
 function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
