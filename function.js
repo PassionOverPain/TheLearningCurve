@@ -5,7 +5,8 @@ let desc = document.getElementById("desc");
 let Mode = "Online";
 let send = false;
 let subNum = 0;
-sTotal = "0";
+let sTotal = "0";
+let sLocation = "";
 function increaseNum() {
   if (subNum == 3) {
     subNum = 0;
@@ -79,6 +80,7 @@ function openTab() {
   datePicker.max = `${year}-12-30`;
 }
 function submitthis() {
+  //=========================================Name/Surname Validation Starts ===============================//
   const Namebox = document.getElementById("Name");
   const Surnamebox = document.getElementById("Surname");
   const Emailbox = document.getElementById("Email");
@@ -118,7 +120,6 @@ function submitthis() {
     Emailbox.focus();
   } else {
     const words = document.getElementsByName("Subject");
-    const plans = document.getElementsByName("Pricing");
     let tutPlan = "";
     let subjects = "";
     let countsub = 0;
@@ -128,6 +129,12 @@ function submitthis() {
           ? (subjects += subject.title)
           : (subjects += ", " + subject.title);
         ++countsub;
+      }
+    });
+    const places = document.getElementsByName("location");
+    places.forEach((place) => {
+      if (place.checked) {
+        sLocation = place.id;
       }
     });
     switch (countsub) {
@@ -143,7 +150,6 @@ function submitthis() {
         );
         break;
       }
-
       case 2: {
         tutPlan = "Basic";
         break;
