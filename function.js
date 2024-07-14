@@ -171,7 +171,6 @@ function submitthis() {
     } else if (send) {
       book(Name, Surname, Grade, subjects, date, tutPlan, Email);
     } else {
-      alert(`So you are calc, Mode is ${Mode} and subs is ${countsub}`);
       return countsub;
     }
   }
@@ -186,6 +185,8 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
     LTutPlan: tutPlan,
     LEmail: Email,
     LMode: Mode,
+    LLocation: sLocation,
+    LTotal: Total,
   };
   emailjs.send("service_xkt6yfv", "template_rwuuzvm", params).then(function () {
     alert(
