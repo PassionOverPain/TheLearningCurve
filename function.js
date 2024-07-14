@@ -134,7 +134,7 @@ function submitthis() {
     const places = document.getElementsByName("location");
     places.forEach((place) => {
       if (place.checked) {
-        sLocation = place.id;
+        sLocation = `I am located in ${place.id}`;
       }
     });
     switch (countsub) {
@@ -175,12 +175,14 @@ function submitthis() {
     if (date == "") {
       window.alert(`Please select a date before proceeding.`);
       datePicker.focus;
-    } else if (sTotal == "0") {
-      alert(
-        `Please calculate your total before booking.This will be the plan registered on our system.`
-      );
     } else if (send) {
-      book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+      if (sTotal == "0") {
+        alert(
+          `Please calculate your total before booking.This will be the plan registered on our system.`
+        );
+      } else {
+        book(Name, Surname, Grade, subjects, date, tutPlan, Email);
+      }
     } else {
       return countsub;
     }
