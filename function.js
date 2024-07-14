@@ -199,22 +199,39 @@ function calcTotal() {
   total = document.getElementById("total");
   {
     if (Mode == "Online") {
-      if ((subs = 2)) {
-        total.textContent = "Your monthly total plan is R500.";
-      } else if ((subs = 3)) {
-        total.textContent = "Your monthly total plan is R700.";
-      } else {
-        total.textContent = "Your monthly total plan is R1000.";
+      switch (subs) {
+        case 2: {
+          total.textContent = "Your monthly total plan is R500";
+          break;
+        }
+
+        case 3: {
+          total.textContent = "Your monthly total plan is R700";
+          break;
+        }
+
+        case 4: {
+          total.textContent = "Your monthly total plan is R1000";
+          break;
+        }
       }
-    } else if (Mode == "Physical") {
-      if ((subs = 2)) {
-        total.textContent = "Your monthly total plan is R700.";
-      } else if ((subs = 3)) {
-        total.textContent = "Your monthly total plan is R1000.";
-      } else {
-        total.textContent = "Your monthly total plan is R1300.";
+    } else
+      switch (subs) {
+        case 2: {
+          total.textContent = "Your monthly total plan is R700";
+          break;
+        }
+
+        case 3: {
+          total.textContent = "Your monthly total plan is R1000";
+          break;
+        }
+
+        case 4: {
+          total.textContent = "Your monthly total plan is R1300";
+          break;
+        }
       }
-    }
   }
 }
 function showLoc() {
