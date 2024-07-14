@@ -5,6 +5,7 @@ let desc = document.getElementById("desc");
 let Mode = "Online";
 let send = false;
 let subNum = 0;
+sTotal = "0";
 function increaseNum() {
   if (subNum == 3) {
     subNum = 0;
@@ -168,6 +169,10 @@ function submitthis() {
     if (date == "") {
       window.alert(`Please select a date before proceeding.`);
       datePicker.focus;
+    } else if (sTotal == "0") {
+      alert(
+        `Please calculate your total before booking.This will be the plan registered on our system.`
+      );
     } else if (send) {
       book(Name, Surname, Grade, subjects, date, tutPlan, Email);
     } else {
@@ -186,7 +191,7 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
     LEmail: Email,
     LMode: Mode,
     LLocation: sLocation,
-    LTotal: Total,
+    LTotal: sTotal,
   };
   emailjs.send("service_xkt6yfv", "template_rwuuzvm", params).then(function () {
     alert(
@@ -202,34 +207,40 @@ function calcTotal() {
     if (Mode == "Online") {
       switch (subs) {
         case 2: {
-          total.textContent = "Your monthly total plan is R500";
+          sTotal = "R500";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
 
         case 3: {
-          total.textContent = "Your monthly total plan is R700";
+          sTotal = "R700";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
 
         case 4: {
-          total.textContent = "Your monthly total plan is R1000";
+          sTotal = "R1000";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
       }
     } else
       switch (subs) {
         case 2: {
-          total.textContent = "Your monthly total plan is R700";
+          sTotal = "R700";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
 
         case 3: {
-          total.textContent = "Your monthly total plan is R1000";
+          sTotal = "R1000";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
 
         case 4: {
-          total.textContent = "Your monthly total plan is R1300";
+          sTotal = "R1300";
+          total.textContent = `Your monthly total plan is ${sTotal}`;
           break;
         }
       }
