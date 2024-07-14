@@ -189,6 +189,9 @@ nav img {
   justify-content: space-evenly;
   font-size: var(--bigfont);
 }
+#total {
+  display: none;
+}
 #place {
   display: none;
 }

@@ -210,48 +210,47 @@ function book(Name, Surname, Grade, subjects, date, tutPlan, Email) {
 function calcTotal() {
   subs = submitthis(false);
   total = document.getElementById("total");
-  {
-    if (Mode == "Online") {
-      switch (subs) {
-        case 2: {
-          sTotal = "R500";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
-
-        case 3: {
-          sTotal = "R700";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
-
-        case 4: {
-          sTotal = "R1000";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
+  if (Mode == "Online") {
+    switch (subs) {
+      case 2: {
+        sTotal = "R500";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
       }
-    } else
-      switch (subs) {
-        case 2: {
-          sTotal = "R700";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
 
-        case 3: {
-          sTotal = "R1000";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
-
-        case 4: {
-          sTotal = "R1300";
-          total.textContent = `Your monthly total plan is ${sTotal}`;
-          break;
-        }
+      case 3: {
+        sTotal = "R700";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
       }
-  }
+
+      case 4: {
+        sTotal = "R1000";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
+      }
+    }
+  } else
+    switch (subs) {
+      case 2: {
+        sTotal = "R700";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
+      }
+
+      case 3: {
+        sTotal = "R1000";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
+      }
+
+      case 4: {
+        sTotal = "R1300";
+        total.textContent = `Your monthly total plan is ${sTotal}`;
+        break;
+      }
+    }
+  total.style.display = "inline-block";
 }
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
