@@ -569,6 +569,7 @@ ul a {
   #words1,
   #words2 {
     display: none;
+    color: white;
   }
   #rights {
     display: none;
