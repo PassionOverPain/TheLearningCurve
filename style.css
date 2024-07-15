@@ -538,12 +538,11 @@ footer {
 }
 #mobileIcon {
   position: fixed;
+  top: 0;
   z-index: 1000;
   cursor: pointer;
 }
 #mobileIcon ion-icon {
-  position: absolute;
-  top: 100vh;
   display: inline-block;
   font-size: var(--bottompad);
   color: white;
