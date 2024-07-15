@@ -536,20 +536,26 @@ footer {
   transition: all 0.5s;
   height: 100vh;
 }
-#mobileNav ion-icon {
+#mobileIcon {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+#mobileIcon ion-icon {
   display: inline-block;
   font-size: var(--bottompad);
   color: white;
 }
 #meNu {
   display: none;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   text-align: center;
 }
 #meNu li {
   font-size: var(--mainfont);
   margin-left: 20px;
+  margin-bottom: 20px;
   margin-right: 2px;
   font-weight: bold;
 }

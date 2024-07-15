@@ -271,7 +271,7 @@ const meNu = document.getElementById("meNu");
 function navbar() {
   if (!seen) {
     mobileNav.style.backgroundColor = "rgb(3, 2, 92)";
-    meNu.style.display = "flex";
+    meNu.style.display = "grid";
     seen = true;
   } else {
     mobileNav.style.backgroundColor = "transparent";
