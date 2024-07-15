@@ -526,8 +526,9 @@ footer {
 }
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
-  background-color: rgb(3, 2, 92);
+  background-color: rgba(4, 2, 92, 0.479);
   backdrop-filter: blur(10px);
+  color: #ffff;
   position: fixed;
   display: none;
   justify-content: center;
@@ -535,7 +536,6 @@ footer {
   text-align: center;
   z-index: 100;
   width: fit-content;
-  padding-left: 30px;
   transition: all 0.5s;
   height: 100vh;
 }
