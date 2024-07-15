@@ -528,15 +528,18 @@ footer {
 #mobileNav {
   position: fixed;
   background-color: transparent;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   width: fit-content;
+  transition: all 0.5s;
+  height: 100vh;
 }
 #mobileNav ion-icon {
   display: inline-block;
   font-size: var(--bottompad);
+  color: white;
 }
 #meNu {
   display: none;
