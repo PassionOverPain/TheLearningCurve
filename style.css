@@ -410,6 +410,7 @@ section {
   position: relative;
   float: inline-start;
   width: 100px;
+  height: fit-content;
 }
 #Card {
   margin: 10px;
@@ -462,7 +463,8 @@ iframe {
   margin-top: 2%;
   border-radius: 20%;
   position: relative;
-  width: 400px;
+  max-width: 80vw;
+  height: fit-content;
 }
 .container {
   display: inline-block;
