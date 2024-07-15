@@ -270,12 +270,10 @@ const mobileNav = document.getElementById("mobileNav");
 const meNu = document.getElementById("meNu");
 function navbar() {
   if (!seen) {
-    mobileNav.style.backgroundColor = "rgb(3, 2, 92)";
     mobileNav.style.display = "grid";
     meNu.style.display = "grid";
     seen = true;
   } else {
-    mobileNav.style.backgroundColor = "transparent";
     mobileNav.style.display = "none";
     meNu.style.display = "none";
     seen = false;
