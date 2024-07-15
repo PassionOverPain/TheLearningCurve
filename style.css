@@ -528,11 +528,13 @@ footer {
 #mobileNav {
   position: fixed;
   background-color: transparent;
-  display: grid;
-  justify-content: space-between;
+  display: none;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 100;
   width: fit-content;
+  padding-left: 30px;
   transition: all 0.5s;
   height: 100vh;
 }
@@ -551,7 +553,7 @@ footer {
   display: none;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: center;
 }
 #meNu li {
   font-size: var(--mainfont);
