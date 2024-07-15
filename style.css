@@ -273,12 +273,14 @@ section {
   position: absolute;
   animation: wordsright 5s infinite;
   transition: display 0.5s;
+  color: white;
 }
 #words2 {
   position: absolute;
   left: 70vw;
   animation: wordsleft 5s infinite;
   transition: display 0.5s;
+  color: white;
 }
 @keyframes wordsright {
   0% {
@@ -569,7 +571,6 @@ ul a {
   #words1,
   #words2 {
     display: none;
-    color: white;
   }
 
   #rights {
