@@ -526,8 +526,9 @@ footer {
 }
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
+  background-color: rgb(3, 2, 92);
+  backdrop-filter: blur(10px);
   position: fixed;
-  background-color: transparent;
   display: none;
   justify-content: center;
   align-items: center;
