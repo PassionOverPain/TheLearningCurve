@@ -654,4 +654,8 @@ label {
   label {
     font-size: var(--mainfont);
   }
+  #backbtn {
+    position: relative;
+    left: 90%;
+  }
 }
