@@ -7,7 +7,7 @@ let subNum = 0;
 let sTotal = "";
 let sLocation = "";
 function increaseNum() {
-  if (subNum == 3) {
+  if (subNum == 4) {
     subNum = 0;
   } else {
     subNum += 1;
@@ -17,7 +17,7 @@ function increaseNum() {
 }
 function decreaseNum() {
   if (subNum == 0) {
-    subNum = 3;
+    subNum = 4;
   } else {
     subNum -= 1;
   }
