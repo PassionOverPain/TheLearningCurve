@@ -124,6 +124,7 @@ nav img {
   }
 }
 .book {
+  color: #ffff;
   display: inline-block;
   position: relative;
   left: 3vw;
@@ -195,7 +196,7 @@ nav img {
   display: none;
 }
 input {
-  color: black;
+  color: #ffff;
   background-image: linear-gradient(to right, purple, blue);
   border-radius: 15px;
   border: none;
@@ -528,7 +529,9 @@ footer {
 }
 
 #topBook {
+  color: #ffff;
   display: flex;
+  justify-content: space-between;
 }
 #bottomBook {
   position: relative;
@@ -651,8 +654,8 @@ label {
     height: fit-content;
   }
   #topBook input {
-    margin: 1;
-    width: 14vw;
+    margin: 0;
+    width: 19vw;
   }
   label {
     font-size: var(--mainfont);
