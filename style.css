@@ -527,8 +527,7 @@ footer {
   left: 35%;
   font-size: var(--mainfont);
 }
-label {
-}
+
 #topBook {
   display: flex;
 }
