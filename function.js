@@ -58,6 +58,12 @@ function display() {
         "Join us at The Learning Curve and experience the difference in your mathematical journey.";
       break;
     }
+    case 4: {
+      title.textContent = "Physics";
+      desc.textContent =
+        "Allow us to bridge the gap between Newtonian mechanics and quantum theory! Included in our physics education, we simplify complex concepts like electromagnetism and wave-particle duality for students at every level. Our tutors are dedicated to helping each student experience that.";
+      break;
+    }
   }
 }
 const booking = document.getElementById("booking");
