@@ -266,7 +266,7 @@ section {
   position: relative;
   display: grid;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   text-align: center;
   background-image: linear-gradient(to right, black, blue);
 }
@@ -536,11 +536,20 @@ footer {
   max-width: 80vw;
   height: fit-content;
 }
+#place,
+#locations {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 #Accounting,
 #Business,
 #English,
 #Math,
-#Physics {
+#Physics,
+#Online,
+#Physical,
+#place input,
+#locations input {
   display: inline-block;
   width: fit-content;
   margin: 0;
