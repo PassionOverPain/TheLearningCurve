@@ -639,6 +639,16 @@ label {
   #Con {
     margin-right: 0;
   }
+  #booking {
+    gap: 0px;
+    position: absolute;
+    top: 0;
+  }
+  #topBook {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
   label {
     font-size: var(--mainfont);
   }
