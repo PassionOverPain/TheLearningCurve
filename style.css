@@ -651,7 +651,8 @@ label {
     height: fit-content;
   }
   #topBook input {
-    width: 12vw;
+    margin: 1;
+    width: 14vw;
   }
   label {
     font-size: var(--mainfont);
