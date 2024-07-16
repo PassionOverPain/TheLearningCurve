@@ -78,6 +78,127 @@
         </ul>
       </nav>
       <section id="HomePage">
+        <div class="card" id="booking">
+          <ion-icon
+            name="close-circle-outline"
+            id="backbtn"
+            onclick="closeTab()"></ion-icon>
+          <div id="topBook">
+            <input
+              type="text"
+              placeholder="Name:"
+              id="Name"
+              autocomplete="name" />
+            <input
+              type="text"
+              placeholder="Surname"
+              id="Surname"
+              autocomplete="additional-name" />
+            <input
+              type="number"
+              name="Grade"
+              id="Grade"
+              placeholder="Grade"
+              min="8"
+              max="12"
+              autocomplete="off"
+              required />
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Email"
+              autocomplete="email"
+              required />
+          </div>
+          <div id="bottomBook">
+            <label for="Accounting">Accounting</label>
+            <input
+              type="checkbox"
+              name="Subject"
+              title="Accounting"
+              id="Accounting" />
+            <label for="Business">Business</label>
+            <input
+              type="checkbox"
+              name="Subject"
+              title="Business"
+              id="Business" />
+            <label for="English">English</label>
+            <input
+              type="checkbox"
+              name="Subject"
+              title="English"
+              id="English" />
+            <label for="Math">Math</label>
+            <input
+              type="checkbox"
+              name="Subject"
+              title="Mathematics"
+              id="Math" />
+            <label for="Physics">Physics</label>
+            <input
+              type="checkbox"
+              name="Subject"
+              title="Physical Science"
+              id="Physics" />
+            <fieldset>
+              <label for="datePicker"
+                >Pick a preferred date to begin your lessons: <br />
+                <input type="date" name="" id="datePicker" />
+              </label>
+            </fieldset>
+            <div class>Number of Subjects per Plan:</div>
+            <div class="plans">
+              <span>Basic Plan: 2</span>
+              <span>Standard Plan: 3</span>
+              <span>Premium Plan: 4</span>
+            </div>
+            <div>
+              <label for="Online">Online Learning Mode</label>
+              <input
+                type="radio"
+                name="Learning"
+                id="Online"
+                title="Online"
+                checked
+                onclick="hideLoc()" />
+              <label for="Physical">Physical Learning Mode</label>
+              <input
+                type="radio"
+                name="Learning"
+                id="Physical"
+                title="Physical"
+                onclick="showLoc()" />
+            </div>
+            <div id="place">
+              <label for="Fourways">Fourways</label>
+              <input type="radio" name="location" id="Fourways" checked />
+              <label for="Midrand">Midrand</label>
+              <input type="radio" name="location" id="Midrand" />
+              <label for="Randburg">Randburg</label>
+              <input type="radio" name="location" id="Randburg" />
+              <label for="Randpark">Randpark Ridge</label>
+              <input type="radio" name="location" id="Randpark" />
+              <label for="Sandton">Sandton</label>
+              <input type="radio" name="location" id="Sandton" />
+              <label for="Sunninghill">Sunninghill</label>
+              <input type="radio" name="location" id="Sunninghill" />
+            </div>
+          </div>
+          <span id="total">Your monthly total is:R0</span>
+          <div id="buttons">
+            <button onclick="submitthis(true)" class="book" id="bookingbtn">
+              Book
+            </button>
+            <button onclick="calcTotal()" class="book" id="calcbtn">
+              Calculate
+            </button>
+            <a href="Main.html#Pricing">
+              <button class="book" id="pricingbtn">Pricing</button>
+            </a>
+          </div>
+        </div>
         <div id="LeftContent">
           <div id="slogan">
             <i>Forget Netflix <br />Binge Learn with Us</i>
@@ -111,127 +232,6 @@
               target="_blank"
               ><ion-icon name="mail-outline"></ion-icon
             ></a>
-          </div>
-          <div class="card" id="booking">
-            <ion-icon
-              name="close-circle-outline"
-              id="backbtn"
-              onclick="closeTab()"></ion-icon>
-            <div id="topBook">
-              <input
-                type="text"
-                placeholder="Name:"
-                id="Name"
-                autocomplete="name" />
-              <input
-                type="text"
-                placeholder="Surname"
-                id="Surname"
-                autocomplete="additional-name" />
-              <input
-                type="number"
-                name="Grade"
-                id="Grade"
-                placeholder="Grade"
-                min="8"
-                max="12"
-                autocomplete="off"
-                required />
-              <input
-                type="email"
-                name="Email"
-                id="Email"
-                placeholder="Email"
-                autocomplete="email"
-                required />
-            </div>
-            <div id="bottomBook">
-              <label for="Accounting">Accounting</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Accounting"
-                id="Accounting" />
-              <label for="Business">Business</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Business"
-                id="Business" />
-              <label for="English">English</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="English"
-                id="English" />
-              <label for="Math">Math</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Mathematics"
-                id="Math" />
-              <label for="Physics">Physics</label>
-              <input
-                type="checkbox"
-                name="Subject"
-                title="Physical Science"
-                id="Physics" />
-              <fieldset>
-                <label for="datePicker"
-                  >Pick a preferred date to begin your lessons: <br />
-                  <input type="date" name="" id="datePicker" />
-                </label>
-              </fieldset>
-              <div class>Number of Subjects per Plan:</div>
-              <div class="plans">
-                <span>Basic Plan: 2</span>
-                <span>Standard Plan: 3</span>
-                <span>Premium Plan: 4</span>
-              </div>
-              <div>
-                <label for="Online">Online Learning Mode</label>
-                <input
-                  type="radio"
-                  name="Learning"
-                  id="Online"
-                  title="Online"
-                  checked
-                  onclick="hideLoc()" />
-                <label for="Physical">Physical Learning Mode</label>
-                <input
-                  type="radio"
-                  name="Learning"
-                  id="Physical"
-                  title="Physical"
-                  onclick="showLoc()" />
-              </div>
-              <div id="place">
-                <label for="Fourways">Fourways</label>
-                <input type="radio" name="location" id="Fourways" checked />
-                <label for="Midrand">Midrand</label>
-                <input type="radio" name="location" id="Midrand" />
-                <label for="Randburg">Randburg</label>
-                <input type="radio" name="location" id="Randburg" />
-                <label for="Randpark">Randpark Ridge</label>
-                <input type="radio" name="location" id="Randpark" />
-                <label for="Sandton">Sandton</label>
-                <input type="radio" name="location" id="Sandton" />
-                <label for="Sunninghill">Sunninghill</label>
-                <input type="radio" name="location" id="Sunninghill" />
-              </div>
-            </div>
-            <span id="total">Your monthly total is:R0</span>
-            <div id="buttons">
-              <button onclick="submitthis(true)" class="book" id="bookingbtn">
-                Book
-              </button>
-              <button onclick="calcTotal()" class="book" id="calcbtn">
-                Calculate
-              </button>
-              <a href="Main.html#Pricing">
-                <button class="book" id="pricingbtn">Pricing</button>
-              </a>
-            </div>
           </div>
         </div>
         <div id="RightContent">

@@ -640,9 +640,11 @@ label {
     margin-right: 0;
   }
   #booking {
+    width: 100%;
     gap: 0px;
     position: absolute;
     top: 0;
+    margin: 0;
   }
   #topBook {
     padding: 0;
