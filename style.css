@@ -639,4 +639,7 @@ label {
   #Con {
     margin-right: 0;
   }
+  label {
+    font-size: var(--mainfont);
+  }
 }
