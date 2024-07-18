@@ -68,11 +68,14 @@ function display() {
 }
 const booking = document.getElementById("booking");
 function closeTab() {
-  booking.style.height = "0";
+  booking.style.display = "none";
 }
 let datePicker = document.getElementById("datePicker");
 function openTab() {
+  booking.style.display = "grid";
+  booking.style.gap = "10px";
   booking.style.height = "fit-content";
+  booking.style.padding = "50px";
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   let month = currentDate.getMonth() + 1;
