@@ -265,12 +265,10 @@ function calcTotal() {
 }
 function showLoc() {
   document.getElementById("place").style.display = "inline-block";
-  document.getElementById("booking").style.left = "0";
   Mode = "Physical";
 }
 function hideLoc() {
   document.getElementById("place").style.display = "none";
-  document.getElementById("booking").style.left = "20%";
   Mode = "Online";
 }
 
