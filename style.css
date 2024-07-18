@@ -417,7 +417,7 @@ section {
   height: fit-content;
 }
 #Card {
-  margin: 0px;
+  margin: 10px;
   width: fit-content;
   backdrop-filter: blur(0px);
   background-color: rgba(4, 2, 92, 0.479);
