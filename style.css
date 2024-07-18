@@ -151,11 +151,11 @@ nav img {
   z-index: 100;
   cursor: default;
   display: none;
-  gap: 10px;
+  gap: 0;
   justify-content: center;
   text-align: center;
   align-items: center;
-  top: 10%;
+  top: 0;
   position: absolute;
   height: 100vh;
 }
@@ -645,7 +645,7 @@ label {
     width: 100vw;
     gap: 0px;
     position: absolute;
-    top: -10%;
+    top: 0;
     margin: 0;
   }
   #topBook {
