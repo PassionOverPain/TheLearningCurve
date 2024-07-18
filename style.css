@@ -483,14 +483,14 @@ iframe {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, black, blue);
+  background-image: linear-gradient(to right, blue, black);
 }
 #Other {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, blue, black);
+  background-image: linear-gradient(to right, black, blue);
 }
 #otherServices {
   text-align: start;
