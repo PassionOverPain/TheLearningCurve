@@ -124,12 +124,13 @@ nav img {
   }
 }
 .book {
+  margin: 10px;
   color: #ffff;
   display: inline-block;
   position: relative;
   left: 3vw;
   background-color: transparent;
-  padding: 12px;
+  padding: 10px;
   border: solid #ffff 1px;
   animation-name: slideleft;
   animation-duration: 2s;
@@ -647,7 +648,7 @@ label {
     margin-right: 0;
   }
   #booking {
-    width: 10vw;
+    max-width: 100vw;
     gap: 0px;
     position: absolute;
     top: 0;
@@ -668,6 +669,10 @@ label {
   }
   #backbtn {
     position: relative;
+    top: 0;
     left: 90%;
+  }
+  .book {
+    padding: 3px;
   }
 }
