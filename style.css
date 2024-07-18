@@ -646,8 +646,13 @@ label {
   #Con {
     margin-right: 0;
   }
-  #HomePage #booking .card {
-    background-color: red;
+  #booking {
+    width: 10vw;
+    gap: 0px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: fit-content;
   }
   #topBook {
     padding: 0;
