@@ -73,6 +73,7 @@ function closeTab() {
 let datePicker = document.getElementById("datePicker");
 function openTab() {
   booking.style.display = "grid";
+  booking.style.gap = "10px";
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   let month = currentDate.getMonth() + 1;
