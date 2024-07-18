@@ -203,7 +203,7 @@ input {
   background-image: linear-gradient(to right, purple, blue);
   border-radius: 15px;
   border: none;
-  margin: 15px;
+  margin: 10px;
   display: inline;
   padding: 2%;
   width: 30%;
@@ -417,7 +417,7 @@ section {
   height: fit-content;
 }
 #Card {
-  margin: 10px;
+  margin: 0px;
   width: fit-content;
   backdrop-filter: blur(0px);
   background-color: rgba(4, 2, 92, 0.479);
@@ -540,6 +540,7 @@ footer {
   position: relative;
   max-width: 80vw;
   height: fit-content;
+  font-size: var(--smallfont);
 }
 #place,
 #locations {
@@ -559,6 +560,7 @@ footer {
   width: fit-content;
   margin: 0;
 }
+
 /* ===========================================Mobile Dev=================================================================== */
 #mobileNav {
   background-color: rgba(4, 2, 92, 0.479);
