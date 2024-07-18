@@ -655,6 +655,9 @@ label {
     margin: 0;
     height: fit-content;
   }
+  #datePicker {
+    width: 80%;
+  }
   #topBook {
     padding: 0;
     margin: 0;
