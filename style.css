@@ -148,7 +148,7 @@ nav img {
   color: white;
 }
 #booking {
-  z-index: 100;
+  z-index: 10000;
   cursor: default;
   display: none;
   gap: 0;
@@ -158,6 +158,9 @@ nav img {
   top: 0;
   position: absolute;
   height: 100vh;
+}
+#buttons {
+  display: inline-block;
 }
 
 #backbtn {
@@ -203,7 +206,7 @@ input {
   margin: 15px;
   display: inline;
   padding: 2%;
-  width: 50%;
+  width: 30%;
   height: fit-content;
   text-align: center;
 }
