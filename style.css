@@ -646,7 +646,8 @@ label {
   #Con {
     margin-right: 0;
   }
-  #booking {
+  #HomePage #booking .card {
+    background-color: red;
   }
   #topBook {
     padding: 0;
