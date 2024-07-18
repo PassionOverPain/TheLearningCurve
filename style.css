@@ -437,7 +437,7 @@ section {
   font-size: var(--mainfont);
   background-color: rgba(128, 128, 128, 0.247);
   backdrop-filter: blur(10px);
-  padding: 25px;
+  padding: 0px;
   width: fit-content;
   height: fit-content;
   color: #ffff;
@@ -647,11 +647,12 @@ label {
     margin-right: 0;
   }
   #booking {
-    width: 100vw;
+    width: 10vw;
     gap: 0px;
     position: absolute;
     top: 0;
     margin: 0;
+    height: fit-content;
   }
   #topBook {
     padding: 0;
